@@ -1,0 +1,1094 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=League+Gothic&display=swap');
+
+/* font-family: "League Gothic", sans-serif; */
+/* font-family: "Italiana", sans-serif; */
+/* font-family: "Peddana", serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* Header general */
+header{ 
+    width: 100%;
+    height: 26rem; 
+    background-color: rgba(93,62,125,.8);
+    background-blend-mode: soft-light;
+    background-image: url("../assets/img/Header.jpg");
+    background-size: cover;
+    background-position: 0% 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    " logo   navg"
+    " aux    aux"
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.logohead{
+    font-family: "Italiana", sans-serif;
+    color: white;
+    text-shadow: 2px 3px 1px black; 
+    grid-area: logo;
+    align-self: baseline;  
+}
+
+.logohead h1{
+    font-size: 4em;
+}
+
+.logohead h2{
+    font-size: 2em;
+    padding-left: 80px; 
+}
+
+header nav{
+    font-family: "League Gothic", sans-serif;
+    grid-area: navg;
+    align-self:self-start;
+    justify-self: center; 
+    padding-left: 200px;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+header a{
+    color: white;
+    font-size: 1.8em;
+    text-decoration-line: none;
+}
+
+.contactonav{
+    text-decoration-line: none;
+    padding: 0px 20px;
+    border: 2.4px outset black;
+    margin-left: 140px;
+}  
+
+/* Texto header - Home  */
+.textohead{
+    width: 80%;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    opacity: .5; 
+    grid-area: aux;
+    justify-self: right;   
+}
+
+.textohead .h3b{
+    font-size: 0.85em;
+    font-weight: lighter; 
+    grid-area: frase;
+    padding-top: 20px;     
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: #823B82;
+    padding-top: 40px;
+    text-align: center; 
+    
+}
+
+footer h5{
+    font-family: "Peddana", serif;
+    font-size: 1.6em;
+    color:white;
+    font-weight: normal;
+}
+
+.iconcenter{
+    padding: 0px 120px;
+}
+
+/* Home */
+main{
+    width: 100%;
+    background-color: #0D001C; 
+}
+
+.descubretext{
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.descubre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0px;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: #A3306B;
+    border-radius: 8%;
+}
+
+.box h3{
+    font-size: 2em;
+    font-weight: 100;
+    padding-left: 15px;
+}
+
+.box h4{
+    font-size: 1.4em;
+    font-weight: 100;
+    padding: 15px 15px;
+}
+
+.box img{
+    width: 40%; 
+    padding-left: 10px;
+}
+
+.equip{
+    width: 100%;
+    background-color: #1B003A;
+    font-family: "League Gothic", sans-serif;
+    font-size: 2em;
+    color: white;
+    display: grid;
+    grid-template-columns: 400px 450px 250px 250px;
+    grid-template-rows: 150px 200px;
+    grid-template-areas: 
+    "  texto     equip1   equip4   equip5"
+    "  equip3    equip1   equip2   equip2"
+    ;
+    justify-items: center;
+    align-items: center;
+    padding-left: 120px;
+} 
+
+.equip1{
+    grid-area: equip1;
+    align-self: stretch;
+    justify-self: right;
+    padding: 20px 0px;
+}
+
+.equip2{
+    grid-area: equip2;
+    align-self: stretch;
+    justify-self: center;
+    padding: 20px 0px;
+}
+
+.equip3{
+    grid-area: equip3;
+    width: 70%;
+}
+
+.equip4{
+    grid-area: equip4;
+    align-self: stretch;
+    justify-self: right;
+    padding: 20px 20px;
+}
+
+.equip5{
+    grid-area: equip5;
+    align-self: stretch;
+    justify-self: left;
+    padding: 20px 20px;
+}
+
+.equiptext{
+    grid-area: texto;
+    text-align: center;
+}
+
+.equiptext h3{
+    font-weight: 100;
+}
+
+.equiptext h4{
+    font-weight: 100;
+}
+
+.audiomain{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 400px 480px 120px 400px;
+    grid-template-rows: repeat(2,100px) repeat(2,50px) 350px;
+    grid-template-areas:
+    "audio1    .             nota1       nota1"
+    "audio2    .             nota2       nota2"
+    "audio3    formulario    icon4       nota4"
+    "audio3    formulario    icon5       nota5"
+    ".         formulario    .           ."
+    ;
+    justify-items: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 120px; 
+}
+
+.escucha1{
+    width: 100%;
+    grid-area: audio1;
+    align-self: baseline;
+}
+
+.escucha2{
+    width: 100%;
+    grid-area: audio2;
+    align-self: baseline;
+}
+
+.escucha3{
+    width: 100%;
+    grid-area: audio3; 
+    align-self: baseline;
+}
+
+.textaudio1{
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.4em;
+    color: white;
+    font-weight: 400;
+    align-self: start;
+    grid-area: nota1;
+}
+
+.textaudio2{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 2em;
+    align-self: flex-end;
+    justify-self: center;
+    font-weight: 400;
+    grid-area: nota1;
+}
+
+.textaudio3{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 1.8em;
+    align-self: center;
+    font-weight: 400;
+    grid-area: nota2;
+}
+
+.textaudio4{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 1.4em;
+    align-self: center;
+    justify-self: left;
+    padding-left: 25px;
+    font-weight: 400;
+    grid-area: nota4;
+}
+
+.textaudio5{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 1.4em;
+    align-self: center;
+    justify-self: left;
+    padding-left: 25px;
+    font-weight: 400;
+    grid-area: nota5; 
+}
+
+.icon4{
+    width: 28%;
+    grid-area: icon4;
+    justify-self: right;
+    align-self: center;
+}
+
+.icon5{
+    width: 26%;
+    grid-area: icon5;
+    justify-self: right;
+    align-self: center;
+}
+
+.formcont{
+    width: 80%;
+    grid-area: formulario;
+}
+
+.formcont fieldset{
+    background-color: #A3306B;
+    height: 15em;
+    border-radius: 8%;
+    border-style: none;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.6em;  
+}
+
+.formcont fieldset legend{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.formcont fieldset label{
+    font-size: 0.65em;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.formcont fieldset input{
+    width: 85%;
+    margin-left: 30px;
+}
+
+.formcont fieldset textarea{
+    width: 85%;
+    margin-left: 30px;
+    outline: none;
+    resize: none;
+}
+
+.boton1 {
+    text-align: center;
+    grid-area: formulario;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+.boton2 {
+    text-align: center;
+    grid-area: formulario;
+    margin-left: 20px;  
+}
+
+/* Servicios */
+.mainservices{
+    /* width: 100%;
+    height: 20em; */
+    background-color: rgb(13, 0, 28);
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px; 
+    grid-area: aux; 
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+
+.descript{
+    width: 100%;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.descript h2{
+    font-weight: lighter;
+}
+
+.descript h3{
+    font-weight: lighter;
+}
+
+.grab{
+    width: 20%;   
+}   
+
+.mezcla{
+    width: 20%;      
+} 
+
+.bate{
+    width: 20%;
+} 
+
+.inst{
+    width: 20%;
+} 
+
+.titserv h2{
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 75px;
+}
+
+.textoheadresp{
+    display: none;
+}
+
+/* Equipamiento */
+.mainequip {
+    background-color: rgba(13,0,28,.85);
+    background-blend-mode: soft-light;
+    background-image: url("../assets/img/Equipamiento/Fondo_equip.png");
+    background-position: contain;
+    list-style:symbols();
+    list-style-position:inside;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.553);
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    gap: 10px 70px;
+}
+
+.mainequip a{
+    text-decoration-line: none;
+    color: white;
+}
+
+.mainequip li{
+    display: list-item;
+}
+
+.titequip h2{
+    color:#A3306B;
+    text-align: center;
+    font-weight: 400;
+}
+
+.lista1{
+    width: 30%;
+}
+
+.lista2{
+    width: 25%;
+}
+
+.lista3{
+    width: 20%;
+}
+
+/* Multimedia */
+.audiomult{
+    width: 90%;
+    grid-area: aux;
+    padding-left: 360px;
+}
+
+.audiomult audio{
+    width: 60%;
+    margin-top: 10px;
+}
+
+.mainmult{
+    width: 100%;
+}
+
+.galeria { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.galeria img{
+    width: 30%;
+    position: absolute; 
+    top: 80px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.galeria input{
+    top: 30px; 
+    position: relative;
+    margin: 0px 5px;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(8):checked ~ img:nth-of-type(8){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(9):checked ~ img:nth-of-type(9){opacity: 1;}
+
+.titmult h2{
+    padding-top: 18em; 
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 400;
+}
+
+/* Contacto */
+.maincont{
+    background-color: #0D001C;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "form    form     .        .        texto1"
+    "form    form     .        icono    texto2"
+    "form    form     .        icono2   texto3"
+    "boton3  boton4   titulo   titulo   ."
+    ;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 260px;
+}
+
+.titcont{
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.8em;
+    font-weight: 400;
+    grid-area: titulo;
+    padding-right: 240px;
+}
+
+.formcontb{
+    width: 80%;
+    padding-bottom: 20px;
+    grid-area: form;
+}
+
+.formcontb fieldset{
+    background-color: #A3306B;
+    border-radius: 8%;
+    border-style: none;
+    padding-bottom: 20px;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.6em;  
+}
+
+.formcontb fieldset legend{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.formcontb fieldset label{
+    font-size: 0.65em;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.formcontb fieldset input{
+    width: 85%;
+    margin-left: 30px;
+}
+
+.formcontb fieldset textarea{
+    width: 85%;
+    margin-left: 30px;
+    outline: none;
+    resize: none;
+}
+
+.boton3{
+    text-align: center;
+    grid-area: boton3;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+.boton4{
+    text-align: center;
+    grid-area: boton4;
+    margin-left: 20px; 
+}
+
+.textcont1{
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.2em;
+    font-weight: 100;
+    color: white;
+    grid-area: texto1;
+    align-self: flex-start;
+    padding-top: 30px;
+}
+
+.textcont2{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.8em;
+    font-weight: 100;
+    color: white;
+    grid-area: texto1;
+    align-self: flex-end;
+    padding-bottom: 60px;
+}
+
+.textcont3{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: center;
+    grid-area: texto2;
+    padding-bottom: 20px;
+}
+
+.textcont4{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: flex-end;
+    grid-area: texto2;
+    padding-bottom: 10px;
+}
+
+.textcont5{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: start;
+    padding-top: 10px;
+    grid-area: texto3;
+}
+
+.icon{
+    width: 26%;
+    grid-area: icono;
+    justify-self: right;
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+.icon2{
+    width: 25%;
+    grid-area: icono2;
+    justify-self: right;
+    align-self: baseline;
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 1450px){
+    .audiomain{
+        padding-left: 40px;
+    }
+    .maincont{
+        padding: 0px 220px;
+    }
+} 
+
+@media (max-width: 1350px){
+    .audiomain{
+        grid-template-columns: 400px 440px 40px 400px;
+        padding-left: 0px;
+    }
+    .icon4{
+        width: 70%;
+    }
+    .icon5{
+        width: 70%;
+    }
+    .equip{
+        padding-left: 0px;
+    }
+    .boton1{
+        margin-left: 120px;
+    }
+    .boton2{
+        margin-left: 10px;
+    }
+    .maincont{
+        padding: 0px 120px;
+    }
+}
+
+@media (max-width: 1250px){
+    .audiomain{
+        grid-template-columns: 350px 400px 40px 350px;
+        }
+    .boton1{
+        margin-left: 115px;
+       }
+    .boton2{
+        margin-left: 5px;
+       }
+    .contactonav{
+        margin-left: 40px;
+       }
+    .equip{
+        grid-template-columns: 350px 400px 200px 200px;
+       }
+}
+
+@media (max-width: 1150px){
+    .contactonav{
+        margin-left: 0px;
+    }
+    .textohead{
+        width: 50%;
+    }
+    .audiomain{
+        grid-template-columns: 300px 450px 40px 300px;
+        }
+    .textaudio1{
+        font-size: 2em;
+    }
+    .textaudio2{
+        font-size: 1.6em;
+    }
+    .textaudio3{
+        font-size: 1.4em;
+    }
+    header nav{
+        padding-left: 100px;
+    }
+    .textohead{
+        width: 90%;
+    }
+    header a{
+        font-size: 1.4em;
+    }
+    .maincont{
+        padding: 0px 60px;
+    }
+}
+
+@media (max-width: 1085px){
+    .audiomain{
+        grid-template-columns: 250px 400px 40px 250px;
+        }
+    .equip{
+            grid-template-columns: 300px 350px 150px 150px;
+        }
+    .maincont{
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 950px){
+    .audiomain{
+        grid-template-columns: 200px 350px 40px 200px;
+        }
+    .equip{
+            grid-template-columns: 250px 300px 100px 100px;
+            font-size: 1.5em;
+        }
+    header nav{
+            padding-left: 0px;
+        }
+    header nav ul{
+        gap:30px;
+    }
+    .equip1{
+        width: 70%;
+        justify-self: left;
+        margin-left: 20px;
+    }
+    .formcont{
+        width: 90%;
+    }
+    .textohead{
+        font-size: 1.4em;
+    }
+    .services{
+        gap: 40px;
+    }
+    .textcont1{
+        font-size: 1.8em;
+    }
+    .textcont2{
+        font-size: 1.4em;
+    }
+
+    .textcont3{
+        font-size: 1.2em;
+    }
+    .textcont4{
+        font-size: 1.2em;
+    }
+    .textcont5{
+        font-size: 1.2em;
+    }
+    .icon{
+        width: 20%;
+    }
+    .icon2{
+        width: 20%;
+    }
+    .formcontb{
+        width: 90%;
+    }
+    .boton3{
+        margin-left: 160px;
+    }
+}
+
+@media (max-width: 850px){
+    .boton3{
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 768px){
+    .box {
+        width: 180px;
+        height: 180px;
+    }
+    .box h3{
+        font-size: 1.6em;
+    } 
+    .box h4{
+        font-size: 1.1em;
+    }
+    .equip{
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "  texto     texto    texto"
+    "  equip1    equip1   equip2"
+    "  equip4    equip5   equip3"
+    ;
+    justify-items: center;
+    align-items: center;
+    }
+    .equip1{
+        width: 50%;
+        justify-self: center;
+    }
+    .equip3{
+        width: 80%;
+    }
+    .equip4{
+        margin-top: 20px;
+        height: 80%;
+    }
+    .equip5{
+        margin-top: 20px;
+        height: 80%;
+    }
+    .equiptext h4{
+        display: none;
+    }
+    .equiptext{
+        font-size: 1.3em;
+    }
+    .audiomain{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr repeat(5,1fr);
+        grid-template-areas:
+        "nota1          nota1"
+        "audio1         audio2"
+        "formulario     nota2"
+        "formulario     icon4"
+        "formulario     nota4"
+        "formulario     icon5"
+        "formulario     nota5"
+        ;
+        justify-items: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .escucha3{
+        display: none;
+    }
+    .textaudio2{
+        display: none;
+    }
+    .icon4{
+        width: 12%;
+        justify-self: flex-start;
+        align-self: flex-end;
+        margin-left: 40px;
+    }
+    .icon5{
+        width: 12%;
+        justify-self: flex-start;
+        align-self: flex-end;
+        margin-left: 40px;
+    }
+    .textaudio1{
+        font-size: 2.4em;
+    }
+    .textaudio3{
+        font-size: 2em;
+        align-self: flex-end;
+    }
+    .textaudio4{
+        font-size: 1.6em;
+        align-self: flex-start;
+        justify-self: flex-start;
+        margin-left: 40px;
+    }
+    .textaudio5{
+        font-size: 1.6em;
+        align-self: flex-start;
+        justify-self: flex-start;
+        margin-left: 40px;
+    }
+    .formcont{
+        align-self: flex-start;
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 140px;
+        padding-top: 50px;
+    }
+    .descript{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.0em;
+    }
+    .grab{
+        width: 25%;
+        padding-top: 180px;
+        margin-left: 40px;
+    }
+    .mezcla{
+        width: 35%;
+        padding-top: 180px;
+        margin-left: 100px;
+    }
+    .bate{
+        width: 35%;
+        padding-top: 160px;
+    }
+    .inst{
+        width: 35%;
+        padding-top: 160px;
+        margin-left: 60px;
+    }
+    .textoheadresp{
+        display: inline;
+        font-family: "League Gothic", sans-serif;
+        font-size: 1.2em;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        opacity: .5; 
+    }
+    .textoheadresp .h3b{
+        width: 60%;
+        font-size: 0.85em;
+        font-weight: lighter; 
+        padding-top: 20px; 
+        margin-left: 150px;    
+    }
+    .titserv h2{
+        margin-top: 25px;
+    }   
+    .mainequip{
+        font-size: 1.4em;
+    }
+    .leyenda{
+        padding-bottom: 90px;
+        grid-area: aux;    
+    }
+    .audiomult{
+        padding-left: 200px;
+    }
+    .mainmult{
+        display: flex;
+        flex-direction: column;
+    }  
+    .titmult h2{
+        padding-bottom: 20px;
+    } 
+    .maincont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr repeat(5,.5fr);
+        grid-template-areas: 
+        "form    form"
+        "icono   icono"            
+        "texto2  texto2"                
+        "icono2  icono2"
+        "texto3  texto3"                 
+        "titulo  titulo"
+        ;
+        justify-items: center;
+        align-items: center;
+        padding: 0px 140px;
+    }
+    .formcontb{
+        width: 80%;
+    }
+    .textcont1{
+        display: none;
+    }
+    .textcont2{
+        display: none;
+    }
+    .textcont3{
+        display: none;
+    }
+    .boton3{
+        margin-left: 132px;
+    }
+    .boton4{
+        margin-left: 38px;
+    }
+    .icon{
+        width: 10%;
+        justify-self: center;
+    }
+    .icon2{
+        width: 10%;
+        justify-self: center;
+    }
+    .textcont4{
+        align-self: baseline;
+    }
+    .textcont5{
+        align-self: baseline;
+    }
+    .titcont{
+        justify-self: center;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 425px){
+
+}
+
+@media (max-width: 320px){
+
+}
