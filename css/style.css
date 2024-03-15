@@ -153,6 +153,11 @@ main{
     height: 250px;
     background-color: #A3306B;
     border-radius: 8%;
+    opacity: 0.5;
+}
+
+.box:hover{
+    opacity: 1;
 }
 
 .box h3{
@@ -388,6 +393,14 @@ main{
     text-align: center;
     grid-area: formulario;
     margin-left: 20px;  
+}
+
+.boton1:hover{
+    background-color: lightgreen;
+}
+
+.boton2:hover{
+    background-color: lightcoral;
 }
 
 /* Servicios */
@@ -654,6 +667,14 @@ main{
     text-align: center;
     grid-area: boton4;
     margin-left: 20px; 
+}
+
+.boton3:hover{
+    background-color: lightgreen;
+}
+
+.boton4:hover{
+    background-color: lightcoral;
 }
 
 .textcont1{
