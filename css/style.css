@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    border: 1px solid red; 
 }
 
 /* Header general */
@@ -69,6 +69,10 @@ header a{
     color: white;
     font-size: 1.8em;
     text-decoration-line: none;
+}
+
+header nav #click, header nav label{
+    display: none;
 }
 
 header a:hover{
@@ -906,7 +910,7 @@ main{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 769px){
     .box {
         width: 180px;
         height: 180px;
@@ -1125,9 +1129,122 @@ main{
     }
 }
 
-@media (max-width: 425px){
-
+@media (max-width: 700px){
+    .logohead h1{
+        font-size: 3em;
+    }
+    .logohead h2{
+        font-size: 1em;
+    }
+    header nav ul{
+        gap: 10px;
+    }
+    header a{
+        font-size: 0.8em;
+    }
+    .textohead{
+        font-size: 1em;     
+    }
+    .textohead .h3b{
+        font-size: 0.45em;     
+    }
+    .formcont{
+        width: 100%;
+    }
+    .formcont fieldset{
+        font-size: 1.2em;  
+    }
+    .formcont fieldset label{
+        font-size: 0.45em;
+        margin-left: 0px;
+    }
+    .formcont fieldset input{
+        width: 85%;
+        margin-left: 15px;
+    }
+    .formcont fieldset textarea{
+        width: 85%;
+        height: 100px;
+        margin-left: 15px;
+        outline: none;
+        resize: none;
+    }
+    .boton1 {
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    .boton2 {
+        margin-left: 20px;  
+    }
+    .contactonav{
+        padding: 0px;
+        border: none;
+        margin-left: 0px;
+    }  
 }
+
+@media (max-width: 426px){
+    .textohead h3{
+        display: none;
+    }
+    .menu{
+        padding-left: 0px;
+        height: 0;
+        overflow: hidden;
+    }
+    header nav{
+        margin-right: 10px;
+        justify-self: right;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    } 
+    header a{
+        font-size: 1.6em;
+    }
+    header nav label{
+        display: inline-flex;
+        padding-left: 26px;
+        cursor: pointer;
+    }
+    header nav #click:checked ~ .menu{
+        height: 100%
+    }
+    .equip{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "  texto     texto  "
+        "  equip1    equip2 "
+        "  equip4    equip5 "
+        "  equip3    equip3 "
+        ;
+        }
+        .equip1{
+            width: 90%;
+            height: 90%;
+        }
+        .equip2{
+            width: 90%;
+            height: 90%;
+        }
+        .equip3{
+            width: 80%;
+            margin: 0px;
+            align-self: self-start;
+        }
+        .equip4{
+            margin: 0px;
+        }
+        .equip5{
+            margin: 0px;
+        }
+}
+
+
 
 @media (max-width: 320px){
 
