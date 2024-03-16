@@ -20,6 +20,7 @@ header{
     background-color: rgba(93,62,125,.8);
     background-blend-mode: soft-light;
     background-image: url("../assets/img/Header.jpg");
+    filter: grayscale();
     background-size: cover;
     background-position: 0% 80%;
     display: grid;
@@ -31,6 +32,10 @@ header{
     ;
     justify-items: center;
     align-items: center;
+}
+
+header:hover{
+    filter: none;
 }
 
 .logohead{
@@ -549,13 +554,23 @@ main{
 }
 
 .mainmult{
-    width: 100%;
+    width: 100%; 
+}
+
+.titmult h2{
+    padding-top: 18em;   
+    padding-bottom: 20px;
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 400;
 }
 
 .galeria { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
     position: relative;
 }
 
@@ -582,15 +597,6 @@ main{
 .galeria input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7){opacity: 1;}
 .galeria input[type=radio]:nth-of-type(8):checked ~ img:nth-of-type(8){opacity: 1;}
 .galeria input[type=radio]:nth-of-type(9):checked ~ img:nth-of-type(9){opacity: 1;}
-
-.titmult h2{
-    padding-top: 18em; 
-    color:#A3306B;
-    font-family: "League Gothic", sans-serif;
-    text-align: center;
-    font-size: 2.8em;
-    font-weight: 400;
-}
 
 /* Contacto */
 .maincont{
@@ -1069,13 +1075,9 @@ main{
     .audiomult{
         padding-left: 200px;
     }
-    .mainmult{
-        display: flex;
-        flex-direction: column;
-    }  
-    .titmult h2{
-        padding-bottom: 20px;
-    } 
+    .galeria img{
+        width: 55%;
+    }
     .maincont{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 4fr repeat(5,.5fr);
@@ -1241,6 +1243,93 @@ main{
         }
         .equip5{
             margin: 0px;
+        }
+        .audiomain{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,0.5fr) 3fr repeat(4,0.5fr);
+            grid-template-areas:
+            "nota1       "
+            "audio1      "         
+            "audio2      "
+            "formulario  "
+            "icon4       "
+            "nota4       "
+            "icon5       "
+            "nota5       "
+            ;
+        }
+        .textaudio3{
+            display: none;
+        }
+        .escucha1{
+            margin-bottom: 10px;
+        }
+        .icon4{
+            margin-top: 10px;
+            justify-self: center;
+            margin: 20px 0px 0px 0px;
+        }
+        .icon5{
+            justify-self: center;
+            margin: 0px;
+        }
+        .textaudio4{
+            justify-self: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        .textaudio5{
+            justify-self: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        .formcont{
+            width: 80%;
+        }
+        .boton1{
+            margin-left: 115px;
+        }
+        .leyenda{
+            display: none;
+        }
+        .mainequip {
+            font-size: 1.4em;
+            justify-content: space-between; 
+            gap: 0px;
+            padding-top: 10px;
+        }
+        .titequip{
+            width: 100%;
+        }
+        .lista1{
+            width: 30%;
+            list-style: none;
+        }
+        .lista1 li{
+            margin-bottom: 8px;
+        }
+        .lista2{
+            width: 30%;
+            list-style: none;
+        }
+        .lista2 li{
+            margin-bottom: 8px;
+        }
+        .lista3{
+            width: 30%;
+            list-style: none;
+        }
+        .lista3 li{
+            margin-bottom: 8px;
+        }
+        .audiomult{
+            padding-left: 40px;
+        }
+        .audiomult audio{
+            width: 90%;
+        }
+        .galeria img{
+            width: 90%;
         }
 }
 
