@@ -117,8 +117,7 @@ footer{
     width: 100%;
     background-color: #823B82;
     padding-top: 40px;
-    text-align: center; 
-    
+    text-align: center;   
 }
 
 footer h5{
@@ -422,6 +421,7 @@ main{
 .services{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 100px; 
     grid-area: aux; 
@@ -850,6 +850,12 @@ main{
     .maincont{
         padding: 0px 0px;
     }
+    .audiomult{
+        padding-left: 260px;
+        }
+        .audiomult audio{
+            width: 60%;
+        }
 }
 
 @media (max-width: 950px){
@@ -913,6 +919,9 @@ main{
 @media (max-width: 850px){
     .boton3{
         margin-left: 120px;
+    }
+    .services{
+        gap: 10px;
     }
 }
 
@@ -1183,6 +1192,93 @@ main{
         border: none;
         margin-left: 0px;
     }  
+    .maincont{
+        padding: 0px 100px;
+    }
+    .boton3{
+        margin-left: 140px;
+    }
+    .services{
+        gap: 150px;
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 630px){
+    .services{
+        gap: 160px;
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 600px){
+    .audiomult{
+        padding-left: 20px;
+    }
+    .maincont{
+        padding: 0px 60px;
+    }
+    .boton3{
+        margin-left: 125px;
+    }
+    .services{
+        gap: 150px;
+        padding-top: 70px;
+    }
+    .grab{
+        width: 35%;
+        padding-top: 190px;
+        margin-left: 0px;
+    }
+    .mezcla{
+        width: 35%;
+        padding-top: 190px;
+        margin-left: 80px;
+        font-size: 0.9em;
+    }
+    .bate{
+        width: 30%;
+        padding-top: 160px;
+        margin-left: 10px;
+    }
+    .inst{
+        width: 35%;
+        padding-top: 160px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 500px){
+    .maincont{
+        padding: 0px 40px;
+    }
+    .boton3{
+        margin-left: 105px;
+    }
+    .services{
+        gap: 140px;
+        padding-top: 70px;
+    }
+    .grab{
+        margin-left: 0px;
+        font-size: 0.9em;
+    }
+    .mezcla{
+        padding-top: 180px;
+        font-size: 0.80em;
+    }
+    .bate{
+        padding-top: 150px;
+    }
+    .inst{
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 480px){
+    .services{
+        gap: 140px 100px;   
+    }
 }
 
 @media (max-width: 426px){
@@ -1347,11 +1443,6 @@ main{
         gap: 155px;
         padding-top: 90px;
     }
-    .descript{
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1.0em;
-    }
     .grab{
         width: 45%;
         padding-top: 195px;
@@ -1359,23 +1450,59 @@ main{
     }
     .mezcla{
         width: 60%;
-        padding-top: 175px;
+        padding-top: 185px;
         margin-left: 5px;
     }
     .bate{
         width: 55%;
-        padding-top: 175px;
+        padding-top: 200px;
         margin-left: 2px;
     }
     .inst{
         width: 45%;
-        padding-top: 150px;
+        padding-top: 165px;
         margin-left: 0px;
     }
 }
 
+@media (max-width: 376px){
+    .equip{
+        grid-template-columns: 180px 180px;
+    }
+    .boton1{
+        margin-left: 95px;
+    }
+    .audiomain audio{
+        width: 90%;
+    }
+    .boton3{
+        margin-left: 90px;
+    }
+}
 
-
-@media (max-width: 320px){
-
+@media (max-width: 321px){
+    .equip{
+        grid-template-columns: 150px 150px;
+    }
+    .boton1{
+        margin-left: 75px;
+    }
+    .boton3{
+        margin-left: 65px;
+    }
+    .iconcenter{
+        padding: 0px 80px;
+    }
+    .formcontb fieldset{
+        font-size: 1.2em;  
+    }
+    .formcontb fieldset label{
+        padding-left: 18px;
+    }
+    .formcontb fieldset input{
+        margin-left: 18px;
+    }
+    .formcontb fieldset textarea{
+        margin-left: 18px;
+    }
 }
