@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red; 
+    /* border: 1px solid red;  */
 }
 
 /* Header general */
@@ -36,6 +36,22 @@ header{
 
 header:hover{
     filter: none;
+}
+
+header img::selection{
+    background-color:#823B82;
+}
+
+.menu ul li a::selection{
+    background-color:#823B82;
+}
+
+.logohead h1::selection{
+    background-color:#823B82;
+}
+
+.logohead h2::selection{
+    background-color:#823B82;
 }
 
 .logohead{
@@ -112,6 +128,14 @@ header a:hover{
     padding-top: 20px;     
 }
 
+.textohead h3::selection{
+    background-color:#823B82;
+}
+
+.h3b::selection{
+    background-color:#823B82;
+}
+
 /* Footer */
 footer{
     width: 100%;
@@ -135,6 +159,46 @@ footer h5{
 main{
     width: 100%;
     background-color: #0D001C; 
+}
+
+.descubretext::selection{
+        background-color:#823B82;
+}
+
+.equiptext h3::selection{
+    background-color:#823B82;
+}
+
+.equiptext h4::selection{
+    background-color:#823B82;
+}
+
+.textaudio1::selection{
+        background-color:#823B82;
+}
+
+.textaudio2::selection{
+    background-color:#823B82;
+}
+
+.textaudio3::selection{
+    background-color:#823B82;
+}
+
+.textaudio4::selection{
+    background-color:#823B82;
+}
+
+.textaudio5::selection{
+    background-color:#823B82;
+}
+
+.icon4::selection{
+    background-color:#823B82;
+}
+
+.icon5::selection{
+    background-color:#823B82;
 }
 
 .descubretext{
@@ -418,6 +482,18 @@ main{
     background-color: rgb(13, 0, 28);
 }
 
+.descript h2::selection{
+    background-color: #823B82;
+}
+
+.descript h3::selection{
+    background-color: #823B82;
+}
+
+.titserv h2::selection{
+    background-color: #823B82;
+}
+
 .services{
     width: 100%;
     display: flex;
@@ -514,6 +590,10 @@ main{
     font-weight: 400;
 }
 
+.titequip h2::selection{
+    background-color:#823B82;
+}
+
 .lista1{
     width: 30%;
 }
@@ -541,6 +621,30 @@ main{
     text-decoration: underline;
 }
 
+.lista1 li::selection{
+    background-color:#823B82;
+}
+
+.lista2 li::selection{
+    background-color:#823B82;
+}
+
+.lista3 li::selection{
+    background-color:#823B82;
+}
+
+.lista1 li a::selection{
+    background-color:#823B82;
+}
+
+.lista2 li a::selection{
+    background-color:#823B82;
+}
+
+.lista3 li a::selection{
+    background-color:#823B82;
+}
+
 /* Multimedia */
 .audiomult{
     width: 90%;
@@ -565,6 +669,10 @@ main{
     text-align: center;
     font-size: 2.8em;
     font-weight: 400;
+}
+
+.titmult h2::selection{
+    background-color:#823B82;
 }
 
 .galeria { 
@@ -622,6 +730,34 @@ main{
     font-weight: 400;
     grid-area: titulo;
     padding-right: 240px;
+}
+
+.titcont::selection{
+    background-color:#823B82;
+}
+
+.maincont h2::selection{
+    background-color:#823B82;
+}
+
+.maincont h3::selection{
+    background-color:#823B82;
+}
+
+.maincont h4::selection{
+    background-color:#823B82;
+}
+
+.maincont h5::selection{
+    background-color:#823B82;
+}
+
+.icon::selection{
+    background-color:#823B82;
+}
+
+.icon2::selection{
+    background-color:#823B82;
 }
 
 .formcontb{
@@ -1478,6 +1614,22 @@ main{
     .boton3{
         margin-left: 90px;
     }
+    .services{
+        gap: 170px;
+        padding-top: 30px;
+    }
+    .grab{
+        padding-top: 200px;
+    }
+    .bate{
+        width: 60%;
+        padding-top: 210px;
+    }
+    .inst{
+        width: 45%;
+        padding-top: 165px;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 321px){
@@ -1504,5 +1656,14 @@ main{
     }
     .formcontb fieldset textarea{
         margin-left: 18px;
+    }
+    .bate{
+        width: 70%;
+        padding-top: 190px;
+    }
+    .inst{
+        width: 45%;
+        padding-top: 165px;
+        margin-left: 0px;
     }
 }
