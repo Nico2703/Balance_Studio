@@ -1164,7 +1164,7 @@ main{
         display: flex;
         flex-wrap: wrap;
         gap: 140px;
-        padding-top: 50px;
+        padding-top: 60px;
     }
     .descript{
         display: flex;
@@ -1598,6 +1598,9 @@ main{
         width: 45%;
         padding-top: 165px;
         margin-left: 0px;
+    }
+    .box{
+        margin-bottom: 20px;
     }
 }
 
