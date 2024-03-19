@@ -1601,6 +1601,9 @@ main{
     }
     .box{
         margin-bottom: 20px;
+    }   
+    footer h5{
+        font-size: 1.4em;
     }
 }
 
@@ -1668,5 +1671,8 @@ main{
         width: 45%;
         padding-top: 170px;
         margin-left: 0px;
+    }
+    footer h5{
+        font-size: 1em;
     }
 }
