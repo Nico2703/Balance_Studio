@@ -1616,7 +1616,7 @@ main{
     }
     .services{
         gap: 170px;
-        padding-top: 30px;
+        padding-top: 45px;
     }
     .grab{
         padding-top: 200px;
@@ -1659,11 +1659,11 @@ main{
     }
     .bate{
         width: 70%;
-        padding-top: 190px;
+        padding-top: 195px;
     }
     .inst{
         width: 45%;
-        padding-top: 165px;
+        padding-top: 170px;
         margin-left: 0px;
     }
 }
