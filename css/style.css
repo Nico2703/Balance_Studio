@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid red;  */
-}
+} 
 
 /* Header general */
 header{ 
@@ -479,9 +479,23 @@ main{
 
 /* Servicios */
 .mainservices{
-    /* width: 100%;
-    height: 20em; */
     background-color: rgb(13, 0, 28);
+}
+
+.elip2resp{
+    display: none;
+}
+
+.elip3resp{
+    display: none;
+}
+
+.elip1resp{
+    display: none;
+}
+
+.elip4resp{
+    display: none;
 }
 
 .descript h2::selection{
@@ -502,7 +516,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 100px; 
-    grid-area: aux; 
+    grid-area: aux;  
     align-self: flex-end;
     padding-bottom: 20px;
 }
@@ -1064,6 +1078,9 @@ main{
 }
 
 @media (max-width: 769px){
+    header nav{
+        margin-left: 40px;
+    }
     .box {
         width: 180px;
         height: 180px;
@@ -1577,28 +1594,57 @@ main{
     .boton4{
         margin-left: 35px;
     }
+    .elip1{
+        display: none;
+    }
+    .elip2{
+        display: none;
+    }
+    .elip3{
+        display: none;
+    }
+    .elip4{
+        display: none;
+    }
     .services{
-        gap: 155px;
-        padding-top: 90px;
+        margin-bottom: 100px;
+        gap: 0px;
+        padding-top: 10px;
+    }
+    .decript{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .elip1resp{
+        display: inline-flex;
+    }
+    .elip2resp{
+        display: inline-flex;
+    }
+    .elip3resp{
+        display: inline-flex;
+    }
+    .elip4resp{
+        display: inline-flex;
     }
     .grab{
         width: 45%;
-        padding-top: 195px;
-        margin-left: 0px;
+        padding-top: 20px;
     }
     .mezcla{
         width: 60%;
-        padding-top: 185px;
+        padding-top: 5px;
         margin-left: 5px;
     }
     .bate{
         width: 55%;
-        padding-top: 200px;
+        padding-top: 5px;
         margin-left: 2px;
     }
     .inst{
         width: 45%;
-        padding-top: 165px;
+        padding-top: 5px;
         margin-left: 0px;
     }
     .box{
@@ -1622,28 +1668,15 @@ main{
     .boton3{
         margin-left: 90px;
     }
-    .services{
-        gap: 160px;
-        padding-top: 90px;
-    }
-    .grab{
-        padding-top: 180px;
-    }
-    .bate{
-        width: 60%;
-        padding-top: 210px;
-    }
-    .inst{
-        width: 45%;
-        padding-top: 165px;
-        margin-left: 0px;
-    }
     .textoheadresp{
         font-size: 1em;
     }
 }
 
 @media (max-width: 321px){
+    .menu{
+        font-size: 0.9em;
+    }
     .equip{
         grid-template-columns: 150px 150px;
     }
@@ -1668,23 +1701,22 @@ main{
     .formcontb fieldset textarea{
         margin-left: 18px;
     }
-    .services{
-        padding-top: 100px;
-        gap: 160px;
-    }
-    .bate{
-        width: 70%;
-        padding-top: 180px;
-    }
-    .inst{
-        width: 45%;
-        padding-top: 160px;
-        margin-left: 0px;
-    }
     footer h5{
         font-size: 1em;
     }
-    .textoheadresp{
+    header nav{ 
+        margin-left: 25px;
+    }
+    .leyenda{
         font-size: 0.9em;
+    }
+    .services .textoheadresp{
+        font-size: 0.9em;
+    }
+    .grab{
+        width: 55%;
+    }
+    .inst{
+        width: 55%;
     }
 }
