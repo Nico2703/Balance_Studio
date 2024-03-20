@@ -1561,7 +1561,7 @@ main{
         padding-left: 40px;
         height: 100%;
         overflow: hidden; 
-        }
+    }
     .audiomult audio{
         width: 90%; 
     }
@@ -1623,11 +1623,11 @@ main{
         margin-left: 90px;
     }
     .services{
-        gap: 170px;
-        padding-top: 45px;
+        gap: 160px;
+        padding-top: 90px;
     }
     .grab{
-        padding-top: 200px;
+        padding-top: 180px;
     }
     .bate{
         width: 60%;
@@ -1637,6 +1637,9 @@ main{
         width: 45%;
         padding-top: 165px;
         margin-left: 0px;
+    }
+    .textoheadresp{
+        font-size: 1em;
     }
 }
 
@@ -1665,16 +1668,23 @@ main{
     .formcontb fieldset textarea{
         margin-left: 18px;
     }
+    .services{
+        padding-top: 100px;
+        gap: 160px;
+    }
     .bate{
         width: 70%;
-        padding-top: 195px;
+        padding-top: 180px;
     }
     .inst{
         width: 45%;
-        padding-top: 170px;
+        padding-top: 160px;
         margin-left: 0px;
     }
     footer h5{
         font-size: 1em;
+    }
+    .textoheadresp{
+        font-size: 0.9em;
     }
 }
