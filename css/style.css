@@ -98,6 +98,8 @@ header nav #click, header nav label{
 
 header a:hover{
     color:#0D001C; 
+    font-weight: 500;
+    border: 2.4px outset #0D001C;;
 }
 
 .contactonav{
