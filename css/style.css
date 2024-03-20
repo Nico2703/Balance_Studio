@@ -1293,6 +1293,12 @@ main{
         justify-self: center;
         padding-right: 0px;
     }
+    .textohead{
+        width: 60%;
+        justify-self: center; 
+        font-size: 1.2em;
+        margin-bottom: 95px;  
+    }
 }
 
 @media (max-width: 700px){
