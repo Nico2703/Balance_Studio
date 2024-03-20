@@ -111,7 +111,7 @@ header a:hover{
 
 /* Texto header - Home  */
 .textohead{
-    width: 80%;
+    width: 100%;
     font-family: "League Gothic", sans-serif;
     font-size: 1.6em;
     font-weight: lighter;
@@ -120,7 +120,7 @@ header a:hover{
     text-align: center;
     opacity: .5; 
     grid-area: aux;
-    justify-self: right;   
+    justify-self: center;   
 }
 
 .textohead .h3b{
@@ -1005,9 +1005,12 @@ main{
     .audiomult{
         padding-left: 260px;
         }
-        .audiomult audio{
-            width: 60%;
-        }
+    .audiomult audio{
+        width: 60%;
+    }
+    .services{
+        gap: 40px;
+    }
 }
 
 @media (max-width: 950px){
@@ -1035,16 +1038,12 @@ main{
     .textohead{
         font-size: 1.4em;
     }
-    .services{
-        gap: 40px;
-    }
     .textcont1{
         font-size: 1.8em;
     }
     .textcont2{
         font-size: 1.4em;
     }
-
     .textcont3{
         font-size: 1.2em;
     }
@@ -1295,7 +1294,6 @@ main{
     }
     .textohead{
         width: 60%;
-        justify-self: center; 
         font-size: 1.2em;
         margin-bottom: 95px;  
     }
