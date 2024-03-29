@@ -1,0 +1,285 @@
+/* Home */
+main{
+    width: 100%;
+    background-color: #0D001C; 
+}
+
+.icon4::selection{
+    background-color:#823B82;
+}
+
+.icon5::selection{
+    background-color:#823B82;
+}
+
+.descubretext{
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.descubre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0px;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: #A3306B;
+    border-radius: 8%;
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+    }
+    h3{
+        font-size: 2em;
+        font-weight: 100;
+        padding-left: 15px;
+    }
+    h4{
+        font-size: 1.4em;
+        font-weight: 100;
+        padding: 15px 15px;
+    }
+    img{
+        width: 40%; 
+        padding-left: 10px;
+    }
+}
+
+.equip{
+    width: 100%;
+    background-color: $color_4;
+    font-family: "League Gothic", sans-serif;
+    font-size: 2em;
+    color: white;
+    @include grid(400px 450px 250px 250px, 150px 200px, center, center, "texto equip1 equip4 equip5" "equip3 equip1 equip2 equip2");
+    padding-left: 120px;
+} 
+
+.equip1{
+    grid-area: equip1;
+    align-self: stretch;
+    justify-self: right;
+    padding: 20px 0px;
+}
+
+.equip2{
+    grid-area: equip2;
+    align-self: stretch;
+    justify-self: center;
+    padding: 20px 0px;
+}
+
+.equip3{
+    grid-area: equip3;
+    width: 70%;
+}
+
+.equip4{
+    grid-area: equip4;
+    align-self: stretch;
+    justify-self: right;
+    padding: 20px 20px;
+}
+
+.equip5{
+    grid-area: equip5;
+    align-self: stretch;
+    justify-self: left;
+    padding: 20px 20px;
+}
+
+.equiptext{
+    grid-area: texto;
+    text-align: center;
+    h3{
+        font-weight: 100;
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+    h4{
+        font-weight: 100;
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+}
+
+.audiomain{
+    width: 100%;
+    @include grid(400px 480px 120px 400px, repeat(2,100px) repeat(2,50px) 350px, center, center, "audio1 . nota1 nota1" "audio2 . nota2 nota2" "audio3 formulario icon4 nota4" "audio3 formulario icon5 nota5" ". formulario  . .");
+    padding-top: 30px;
+    padding-left: 120px; 
+}
+
+.escucha1{
+    width: 100%;
+    grid-area: audio1;
+    align-self: baseline;
+}
+
+.escucha2{
+    width: 100%;
+    grid-area: audio2;
+    align-self: baseline;
+}
+
+.escucha3{
+    width: 100%;
+    grid-area: audio3; 
+    align-self: baseline;
+}
+
+.textaudio1{
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.4em;
+    color: white;
+    font-weight: 400;
+    align-self: start;
+    grid-area: nota1;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.textaudio2{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 2em;
+    align-self: flex-end;
+    justify-self: center;
+    font-weight: 400;
+    grid-area: nota1;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.textaudio3{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 1.8em;
+    align-self: center;
+    font-weight: 400;
+    grid-area: nota2;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.textaudio4{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 1.4em;
+    align-self: center;
+    justify-self: left;
+    padding-left: 25px;
+    font-weight: 400;
+    grid-area: nota4;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.textaudio5{
+    font-family: "League Gothic", sans-serif;
+    color: white;
+    font-size: 1.4em;
+    align-self: center;
+    justify-self: left;
+    padding-left: 25px;
+    font-weight: 400;
+    grid-area: nota5;
+    &::selection{
+        background-color: $color_2;
+    } 
+}
+
+.icon4{
+    width: 28%;
+    grid-area: icon4;
+    justify-self: right;
+    align-self: center;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.icon5{
+    width: 26%;
+    grid-area: icon5;
+    justify-self: right;
+    align-self: center;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.formcont{
+    width: 80%;
+    grid-area: formulario;
+    fieldset{
+        background-color: $color_5;
+        height: 15em;
+        border-radius: 8%;
+        border-style: none;
+        font-family: "League Gothic", sans-serif;
+        font-weight: 400;
+        color: white;
+        font-size: 1.6em;
+        legend{
+            text-align: center;
+            padding-top: 30px;
+        } 
+        label{
+            font-size: 0.65em;
+            font-weight: 100;
+            text-align: left;
+            padding-left: 30px;
+            list-style-type: none; 
+        }
+        input{
+            width: 85%;
+            margin-left: 30px;
+        }
+        textarea{
+            width: 85%;
+            margin-left: 30px;
+            outline: none;
+            resize: none;
+        }
+    }
+}
+
+.boton1 {
+    text-align: center;
+    grid-area: formulario;
+    margin-top: 10px;
+    margin-left: 140px;
+    &:hover{
+        background-color: lightgreen;
+    }
+}
+
+.boton2 {
+    text-align: center;
+    grid-area: formulario;
+    margin-left: 20px; 
+    &:hover{
+        background-color: lightcoral;
+    } 
+}

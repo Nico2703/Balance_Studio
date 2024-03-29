@@ -1,0 +1,218 @@
+@media (max-width: 426px){
+    .textohead h3{
+        display: none;
+    }
+    .menu{
+        padding-left: 0px;
+        height: 0;
+        overflow: hidden;
+    }
+    header nav{
+        margin-right: 10px;
+        justify-self: right;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    } 
+    header a{
+        font-size: 1.6em;
+    }
+    header nav label{
+        display: inline-flex;
+        padding-left: 26px;
+        cursor: pointer;
+    }
+    header nav #click:checked ~ .menu{
+        height: 100%;
+    }
+    .equip{
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 1fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "  texto     texto  "
+        "  equip1    equip2 "
+        "  equip4    equip5 "
+        "  equip3    equip3 "
+        ;
+    }
+    .equip1{
+        width: 90%;
+        height: 90%;
+    }
+    .equip2{
+        width: 90%;
+        height: 90%;
+    }
+    .equip3{
+        width: 80%;
+        margin: 0px;
+        align-self: self-start;
+    }
+    .equip4{
+        margin: 0px;
+    }
+    .equip5{
+        margin: 0px;
+    }
+    .audiomain{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,0.5fr) 3fr repeat(4,0.5fr);
+        grid-template-areas:
+        "nota1       "
+        "audio1      "         
+        "audio2      "
+        "formulario  "
+        "icon4       "
+        "nota4       "
+        "icon5       "
+        "nota5       "
+        ;
+    }
+    .textaudio3{
+        display: none;
+    }
+    .escucha1{
+        margin-bottom: 10px;
+    }
+    .icon4{
+        margin-top: 10px;
+        justify-self: center;
+        margin: 20px 0px 0px 0px;
+    }
+    .icon5{
+        justify-self: center;
+        margin: 0px;
+    }
+    .textaudio4{
+        justify-self: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .textaudio5{
+        justify-self: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .formcont{
+        width: 80%;
+    }
+    .boton1{
+        margin-left: 115px;
+    }
+    .textoheadresp .h3b{
+        width: 90%;
+        margin: 0px 20px;
+    }
+    .mainequip {
+        font-size: 1.4em;
+        justify-content: space-between; 
+        gap: 0px;
+        padding-top: 10px;
+    }
+    .titequip{
+        width: 100%;
+    }
+    .lista1{
+        width: 30%;
+        list-style: none;
+    }
+    .lista1 li{
+        margin-bottom: 8px;
+    }
+    .lista2{
+        width: 30%;
+        list-style: none;
+    }
+    .lista2 li{
+        margin-bottom: 8px;
+    }
+    .lista3{
+        width: 30%;
+        list-style: none;
+    }
+    .lista3 li{
+        margin-bottom: 8px;
+    }
+    .audiomult{
+        padding-left: 40px;
+        height: 100%;
+        overflow: hidden; 
+    }
+    .audiomult audio{
+        width: 90%; 
+    }
+    .galeria img{
+        width: 90%;
+    }
+    .maincont{
+        padding: 0px;
+    }
+    .boton3{
+        margin-left: 110px;
+    }
+    .boton4{
+        margin-left: 35px;
+    }
+    .elip1{
+        display: none;
+    }
+    .elip2{
+        display: none;
+    }
+    .elip3{
+        display: none;
+    }
+    .elip4{
+        display: none;
+    }
+    .services{
+        margin-bottom: 100px;
+        gap: 0px;
+        padding-top: 10px;
+    }
+    .decript{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .elip1resp{
+        display: inline-flex;
+    }
+    .elip2resp{
+        display: inline-flex;
+    }
+    .elip3resp{
+        display: inline-flex;
+    }
+    .elip4resp{
+        display: inline-flex;
+    }
+    .grab{
+        width: 45%;
+        padding-top: 20px;
+    }
+    .mezcla{
+        width: 60%;
+        padding-top: 5px;
+        margin-left: 5px;
+    }
+    .bate{
+        width: 55%;
+        padding-top: 5px;
+        margin-left: 2px;
+    }
+    .inst{
+        width: 45%;
+        padding-top: 5px;
+        margin-left: 0px;
+    }
+    .box{
+        margin-bottom: 20px;
+    }   
+    footer h5{
+        font-size: 1.4em;
+    }
+}

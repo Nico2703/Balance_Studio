@@ -1,0 +1,53 @@
+@media (max-width: 950px){
+    .audiomain{
+        grid-template-columns: 200px 350px 40px 200px;
+        }
+    .equip{
+            grid-template-columns: 250px 300px 100px 100px;
+            font-size: 1.5em;
+        }
+    header nav{
+            padding-left: 0px;
+        }
+    header nav ul{
+        gap:30px;
+    }
+    .equip1{
+        width: 70%;
+        justify-self: left;
+        margin-left: 20px;
+    }
+    .formcont{
+        width: 90%;
+    }
+    .textohead{
+        font-size: 1.4em;
+    }
+    .textcont1{
+        font-size: 1.8em;
+    }
+    .textcont2{
+        font-size: 1.4em;
+    }
+    .textcont3{
+        font-size: 1.2em;
+    }
+    .textcont4{
+        font-size: 1.2em;
+    }
+    .textcont5{
+        font-size: 1.2em;
+    }
+    .icon{
+        width: 20%;
+    }
+    .icon2{
+        width: 20%;
+    }
+    .formcontb{
+        width: 90%;
+    }
+    .boton3{
+        margin-left: 160px;
+    }
+}

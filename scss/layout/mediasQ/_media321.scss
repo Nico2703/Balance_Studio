@@ -1,0 +1,47 @@
+@media (max-width: 321px){
+    .menu{
+        font-size: 0.9em;
+    }
+    .equip{
+        grid-template-columns: 150px 150px;
+    }
+    .boton1{
+        margin-left: 75px;
+    }
+    .boton3{
+        margin-left: 65px;
+    }
+    .iconcenter{
+        padding: 0px 80px;
+    }
+    .formcontb fieldset{
+        font-size: 1.2em;  
+    }
+    .formcontb fieldset label{
+        padding-left: 18px;
+    }
+    .formcontb fieldset input{
+        margin-left: 18px;
+    }
+    .formcontb fieldset textarea{
+        margin-left: 18px;
+    }
+    footer h5{
+        font-size: 1em;
+    }
+    header nav{ 
+        margin-left: 25px;
+    }
+    .leyenda{
+        font-size: 0.9em;
+    }
+    .services .textoheadresp{
+        font-size: 0.9em;
+    }
+    .grab{
+        width: 55%;
+    }
+    .inst{
+        width: 55%;
+    }
+}

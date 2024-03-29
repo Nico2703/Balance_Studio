@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=League+Gothic&display=swap');
+
+/* Utilities **/
+@import "./utilities/variables";
+@import "./utilities/mapas";
+@import "./utilities/mixin";
+
+ /* Base **/
+ @import "./base/reset";
+
+/* Layout **/
+@import "./layout/header-home";
+@import "./layout/main-home";
+@import "./layout/footer";
+
+ /* Media **/
+ @import "./layout/mediasQ/media1450";
+ @import "./layout/mediasQ/media1350";
+ @import "./layout/mediasQ/media1250";
+ @import "./layout/mediasQ/media1150";
+ @import "./layout/mediasQ/media1085";
+ @import "./layout/mediasQ/media950";
+ @import "./layout/mediasQ/media850";
+ @import "./layout/mediasQ/media769";
+ @import "./layout/mediasQ/media700";
+ @import "./layout/mediasQ/media630";
+ @import "./layout/mediasQ/media600";
+ @import "./layout/mediasQ/media500";
+ @import "./layout/mediasQ/media480";
+ @import "./layout/mediasQ/media426";
+ @import "./layout/mediasQ/media376";
+ @import "./layout/mediasQ/media321";
+
+/* Servicios */
+.mainservices{
+    background-color: rgb(13, 0, 28);
+}
+
+.elip2resp{
+    display: none;
+}
+
+.elip3resp{
+    display: none;
+}
+
+.elip1resp{
+    display: none;
+}
+
+.elip4resp{
+    display: none;
+}
+
+.descript h2::selection{
+    background-color: #823B82;
+}
+
+.descript h3::selection{
+    background-color: #823B82;
+}
+
+.titserv h2::selection{
+    background-color: #823B82;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 100px; 
+    grid-area: aux;  
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+
+.descript{
+    width: 100%;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.descript h2{
+    font-weight: lighter;
+}
+
+.descript h3{
+    font-weight: lighter;
+}
+
+.grab{
+    width: 20%;   
+}   
+
+.mezcla{
+    width: 20%;      
+} 
+
+.bate{
+    width: 20%;
+} 
+
+.inst{
+    width: 20%;
+} 
+
+.titserv h2{
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 75px;
+}
+
+.textoheadresp{
+    display: none;
+}
+
+/* Equipamiento */
+.mainequip {
+    background-color: rgba(13,0,28,.85);
+    background-blend-mode: soft-light;
+    background-image: url("../assets/img/Equipamiento/Fondo_equip.png");
+    background-position: contain;
+    list-style:symbols();
+    list-style-position:inside;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.553);
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    gap: 10px 70px;
+}
+
+.mainequip a{
+    text-decoration-line: none;
+    color: white;
+}
+
+.mainequip li{
+    display: list-item;
+}
+
+.titequip h2{
+    color:#A3306B;
+    text-align: center;
+    font-weight: 400;
+}
+
+.titequip h2::selection{
+    background-color:#823B82;
+}
+
+.lista1{
+    width: 30%;
+}
+
+.lista2{
+    width: 25%;
+}
+
+.lista3{
+    width: 20%;
+}
+
+.lista1 li a:hover{
+    color:#A3306B;
+    text-decoration: underline;
+}
+
+.lista2 li a:hover{
+    color:#A3306B;
+    text-decoration: underline;
+}
+
+.lista3 li a:hover{
+    color:#A3306B;
+    text-decoration: underline;
+}
+
+.lista1 li::selection{
+    background-color:#823B82;
+}
+
+.lista2 li::selection{
+    background-color:#823B82;
+}
+
+.lista3 li::selection{
+    background-color:#823B82;
+}
+
+.lista1 li a::selection{
+    background-color:#823B82;
+}
+
+.lista2 li a::selection{
+    background-color:#823B82;
+}
+
+.lista3 li a::selection{
+    background-color:#823B82;
+}
+
+/* Multimedia */
+.audiomult{
+    width: 90%;
+    grid-area: aux;
+    padding-left: 360px;
+}
+
+.audiomult audio{
+    width: 60%;
+    margin-top: 10px;
+}
+
+.mainmult{
+    width: 100%; 
+}
+
+.titmult h2{
+    padding-top: 18em;   
+    padding-bottom: 20px;
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 400;
+}
+
+.titmult h2::selection{
+    background-color:#823B82;
+}
+
+.galeria { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    position: relative;
+}
+
+.galeria img{
+    width: 30%;
+    position: absolute; 
+    top: 80px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.galeria input{
+    top: 30px; 
+    position: relative;
+    margin: 0px 5px;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(7):checked ~ img:nth-of-type(7){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(8):checked ~ img:nth-of-type(8){opacity: 1;}
+.galeria input[type=radio]:nth-of-type(9):checked ~ img:nth-of-type(9){opacity: 1;}
+
+/* Contacto */
+.maincont{
+    background-color: #0D001C;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "form    form     .        .        texto1"
+    "form    form     .        icono    texto2"
+    "form    form     .        icono2   texto3"
+    "boton3  boton4   titulo   titulo   ."
+    ;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 260px;
+}
+
+.titcont{
+    color:#A3306B;
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.8em;
+    font-weight: 400;
+    grid-area: titulo;
+    padding-right: 240px;
+}
+
+.titcont::selection{
+    background-color:#823B82;
+}
+
+.maincont h2::selection{
+    background-color:#823B82;
+}
+
+.maincont h3::selection{
+    background-color:#823B82;
+}
+
+.maincont h4::selection{
+    background-color:#823B82;
+}
+
+.maincont h5::selection{
+    background-color:#823B82;
+}
+
+.icon::selection{
+    background-color:#823B82;
+}
+
+.icon2::selection{
+    background-color:#823B82;
+}
+
+.formcontb{
+    width: 80%;
+    padding-bottom: 20px;
+    grid-area: form;
+}
+
+.formcontb fieldset{
+    background-color: #A3306B;
+    border-radius: 8%;
+    border-style: none;
+    padding-bottom: 20px;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.6em;  
+}
+
+.formcontb fieldset legend{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.formcontb fieldset label{
+    font-size: 0.65em;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.formcontb fieldset input{
+    width: 85%;
+    margin-left: 30px;
+}
+
+.formcontb fieldset textarea{
+    width: 85%;
+    margin-left: 30px;
+    outline: none;
+    resize: none;
+}
+
+.boton3{
+    text-align: center;
+    grid-area: boton3;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+.boton4{
+    text-align: center;
+    grid-area: boton4;
+    margin-left: 20px; 
+}
+
+.boton3:hover{
+    background-color: lightgreen;
+}
+
+.boton4:hover{
+    background-color: lightcoral;
+}
+
+.textcont1{
+    font-family: "League Gothic", sans-serif;
+    font-size: 2.2em;
+    font-weight: 100;
+    color: white;
+    grid-area: texto1;
+    align-self: flex-start;
+    padding-top: 30px;
+}
+
+.textcont2{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.8em;
+    font-weight: 100;
+    color: white;
+    grid-area: texto1;
+    align-self: flex-end;
+    padding-bottom: 60px;
+}
+
+.textcont3{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: center;
+    grid-area: texto2;
+    padding-bottom: 20px;
+}
+
+.textcont4{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: flex-end;
+    grid-area: texto2;
+    padding-bottom: 10px;
+}
+
+.textcont5{
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: start;
+    padding-top: 10px;
+    grid-area: texto3;
+}
+
+.icon{
+    width: 26%;
+    grid-area: icono;
+    justify-self: right;
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
+
+.icon2{
+    width: 25%;
+    grid-area: icono2;
+    justify-self: right;
+    align-self: baseline;
+    padding-top: 10px;
+}
+
+

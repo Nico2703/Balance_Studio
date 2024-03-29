@@ -1,0 +1,104 @@
+header{ 
+    width: 100%;
+    height: 26rem; 
+    background-color: $color_1;
+    background-blend-mode: soft-light;
+    background-image: url("../assets/img/Header.jpg");
+    filter: grayscale(1);
+    background-size: cover;
+    background-position: 0% 80%;
+    @include grid(1fr 3fr, 1fr 2fr, center, center, "logo navg" "aux aux");
+    &:hover{
+        filter: none;
+    }
+    img::selection{
+        background-color:$color_2;
+    }
+    nav{
+        font-family: "League Gothic", sans-serif;
+        grid-area: navg;
+        align-self:self-start;
+        justify-self: center; 
+        padding-left: 200px;
+        ul{
+            list-style-type: none;
+            @include flex(row, none, none, 60px);
+            a{
+                color: white;
+                font-size: 1.8em;
+                text-decoration-line: none;
+                border: 1.8px solid transparent;
+                &:hover{
+                    color: $color_3; 
+                    font-weight: 500;
+                    border: 1.8px outset $color_3; 
+                }   
+            }
+        }
+    }
+}
+
+.menu ul li a::selection{
+    background-color: $color_2;
+}
+
+.logohead{
+    font-family: "Italiana", sans-serif;
+    color: white;
+    text-shadow: 2px 3px 1px black; 
+    grid-area: logo;
+    align-self: baseline;
+    h1{
+        font-size: 4em;
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+    h2{
+        font-size: 2em;
+        padding-left: 80px;
+        &::selection{
+            background-color: $color_2;
+        }   
+    }
+}
+
+header nav #click, header nav label{
+    display: none;
+}
+
+.contactonav{
+    text-decoration-line: none;
+    padding: 0px 20px;
+    border: 2.4px outset black;
+    margin-left: 140px;
+}  
+
+/* Texto header - Home  */
+.textohead{
+    width: 100%;
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.6em;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    opacity: .5; 
+    grid-area: aux;
+    justify-self: center;
+    .h3b{
+        font-size: 0.85em;
+        font-weight: lighter; 
+        grid-area: frase;
+        padding-top: 20px; 
+        &::selection{
+            background-color: $color_2;
+        } 
+    } 
+    h3{
+        &::selection{
+            background-color: $color_2;
+        } 
+    }  
+}
+

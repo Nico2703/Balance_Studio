@@ -1,0 +1,63 @@
+@media (max-width: 700px){
+    .logohead h1{
+        font-size: 3em;
+    }
+    .logohead h2{
+        font-size: 1em;
+    }
+    header nav ul{
+        gap: 10px;
+    }
+    header a{
+        font-size: 0.8em;
+    }
+    .textohead{
+        font-size: 1em;     
+    }
+    .textohead .h3b{
+        font-size: 0.45em;     
+    }
+    .formcont{
+        width: 100%;
+    }
+    .formcont fieldset{
+        font-size: 1.2em;  
+    }
+    .formcont fieldset label{
+        font-size: 0.45em;
+        margin-left: 0px;
+    }
+    .formcont fieldset input{
+        width: 85%;
+        margin-left: 15px;
+    }
+    .formcont fieldset textarea{
+        width: 85%;
+        height: 100px;
+        margin-left: 15px;
+        outline: none;
+        resize: none;
+    }
+    .boton1 {
+        margin-top: 10px;
+        margin-left: 70px;
+    }
+    .boton2 {
+        margin-left: 20px;  
+    }
+    .contactonav{
+        padding: 0px;
+        border: none;
+        margin-left: 0px;
+    }  
+    .maincont{
+        padding: 0px 100px;
+    }
+    .boton3{
+        margin-left: 140px;
+    }
+    .services{
+        gap: 150px;
+        padding-top: 80px;
+    }
+}

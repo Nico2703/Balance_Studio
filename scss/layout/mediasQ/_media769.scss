@@ -1,0 +1,224 @@
+@media (max-width: 769px){
+    header nav{
+        margin-left: 40px;
+    }
+    .box {
+        width: 180px;
+        height: 180px;
+    }
+    .box h3{
+        font-size: 1.6em;
+    } 
+    .box h4{
+        font-size: 1.1em;
+    }
+    .equip{
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "  texto     texto    texto"
+    "  equip1    equip1   equip2"
+    "  equip4    equip5   equip3"
+    ;
+    justify-items: center;
+    align-items: center;
+    }
+    .equip1{
+        width: 50%;
+        justify-self: center;
+    }
+    .equip3{
+        width: 80%;
+    }
+    .equip4{
+        margin-top: 20px;
+        height: 80%;
+    }
+    .equip5{
+        margin-top: 20px;
+        height: 80%;
+    }
+    .equiptext h4{
+        display: none;
+    }
+    .equiptext{
+        font-size: 1.3em;
+    }
+    .audiomain{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr repeat(5,1fr);
+        grid-template-areas:
+        "nota1          nota1"
+        "audio1         audio2"
+        "formulario     nota2"
+        "formulario     icon4"
+        "formulario     nota4"
+        "formulario     icon5"
+        "formulario     nota5"
+        ;
+        justify-items: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .escucha3{
+        display: none;
+    }
+    .textaudio2{
+        display: none;
+    }
+    .icon4{
+        width: 12%;
+        justify-self: flex-start;
+        align-self: flex-end;
+        margin-left: 40px;
+    }
+    .icon5{
+        width: 12%;
+        justify-self: flex-start;
+        align-self: flex-end;
+        margin-left: 40px;
+    }
+    .textaudio1{
+        font-size: 2.4em;
+    }
+    .textaudio3{
+        font-size: 2em;
+        align-self: flex-end;
+    }
+    .textaudio4{
+        font-size: 1.6em;
+        align-self: flex-start;
+        justify-self: flex-start;
+        margin-left: 40px;
+    }
+    .textaudio5{
+        font-size: 1.6em;
+        align-self: flex-start;
+        justify-self: flex-start;
+        margin-left: 40px;
+    }
+    .formcont{
+        align-self: flex-start;
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 140px;
+        padding-top: 60px;
+    }
+    .descript{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.0em;
+    }
+    .grab{
+        width: 25%;
+        padding-top: 180px;
+        margin-left: 40px;
+    }
+    .mezcla{
+        width: 35%;
+        padding-top: 180px;
+        margin-left: 100px;
+    }
+    .bate{
+        width: 35%;
+        padding-top: 160px;
+    }
+    .inst{
+        width: 35%;
+        padding-top: 160px;
+        margin-left: 60px;
+    }
+    .textoheadresp{
+        display: inline;
+        font-family: "League Gothic", sans-serif;
+        font-size: 1.2em;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        opacity: .5;
+    }
+    .textoheadresp .h3b{
+        width: 60%;
+        font-size: 0.85em;
+        font-weight: lighter; 
+        padding-top: 20px; 
+        margin-left: 150px;   
+    }
+    .titserv h2{
+        margin-top: 25px;
+    }   
+    .mainequip{
+        font-size: 1.4em;
+    }
+    .leyenda{
+        text-align: center;
+        padding-bottom: 95px;
+        margin-left: 15px;
+        grid-area: aux;    
+    }
+    .audiomult{
+        padding-left: 200px;
+    }
+    .galeria img{
+        width: 55%;
+    }
+    .maincont{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr repeat(5,.5fr);
+        grid-template-areas: 
+        "form    form"
+        "icono   icono"            
+        "texto2  texto2"                
+        "icono2  icono2"
+        "texto3  texto3"                 
+        "titulo  titulo"
+        ;
+        justify-items: center;
+        align-items: center;
+        padding: 0px 140px;
+    }
+    .formcontb{
+        width: 80%;
+    }
+    .textcont1{
+        display: none;
+    }
+    .textcont2{
+        display: none;
+    }
+    .textcont3{
+        display: none;
+    }
+    .boton3{
+        margin-left: 132px;
+    }
+    .boton4{
+        margin-left: 38px;
+    }
+    .icon{
+        width: 10%;
+        justify-self: center;
+    }
+    .icon2{
+        width: 10%;
+        justify-self: center;
+    }
+    .textcont4{
+        align-self: baseline;
+    }
+    .textcont5{
+        align-self: baseline;
+    }
+    .titcont{
+        justify-self: center;
+        padding-right: 0px;
+    }
+    .textohead{
+        width: 60%;
+        font-size: 1.2em;
+        margin-bottom: 95px;  
+    }
+}
