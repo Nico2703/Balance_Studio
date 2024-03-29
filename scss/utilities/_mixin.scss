@@ -5,7 +5,6 @@
     align-items: $align;
     gap: $gap;
 }
-
 @mixin grid($col, $row, $justify, $align, $area){
     display: grid;
     grid-template-columns: $col;

@@ -1,9 +1,9 @@
 @media (max-width: 1150px){
+    .maincont{
+        padding: 0px 60px;
+    }
     .contactonav{
         margin-left: 0px;
-    }
-    .textohead{
-        width: 50%;
     }
     .audiomain{
         grid-template-columns: 300px 450px 40px 300px;
@@ -17,16 +17,19 @@
     .textaudio3{
         font-size: 1.4em;
     }
-    header nav{
-        padding-left: 100px;
-    }
     .textohead{
         width: 90%;
     }
-    header a{
-        font-size: 1.4em;
-    }
-    .maincont{
-        padding: 0px 60px;
+    header{
+        nav{
+            ul{
+                li{
+                    a{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+            padding-left: 100px; 
+        }
     }
 }

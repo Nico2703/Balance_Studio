@@ -1,18 +1,18 @@
 @media (max-width: 1085px){
-    .audiomain{
-        grid-template-columns: 250px 400px 40px 250px;
-        }
-    .equip{
-            grid-template-columns: 300px 350px 150px 150px;
-        }
     .maincont{
         padding: 0px 0px;
     }
+    .audiomain{
+        grid-template-columns: 250px 400px 40px 250px;
+    }
+    .equip{
+        grid-template-columns: 300px 350px 150px 150px;
+    }
     .audiomult{
         padding-left: 260px;
+        audio{
+            width: 60%;
         }
-    .audiomult audio{
-        width: 60%;
     }
     .services{
         gap: 40px;

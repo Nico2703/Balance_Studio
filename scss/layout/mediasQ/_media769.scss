@@ -1,27 +1,21 @@
 @media (max-width: 769px){
-    header nav{
-        margin-left: 40px;
+    header{
+        nav{
+            margin-left: 40px;
+        }
     }
     .box {
         width: 180px;
         height: 180px;
-    }
-    .box h3{
-        font-size: 1.6em;
-    } 
-    .box h4{
-        font-size: 1.1em;
+        h3{
+            font-size: 1.6em; 
+        }
+        h4{
+            font-size: 1.1em;
+        }
     }
     .equip{
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 1fr 3fr 3fr;
-    grid-template-areas: 
-    "  texto     texto    texto"
-    "  equip1    equip1   equip2"
-    "  equip4    equip5   equip3"
-    ;
-    justify-items: center;
-    align-items: center;
+        @include grid(1fr 1fr 2fr, 1fr 3fr 3fr, center, center, "texto texto texto" "equip1 equip1 equip2" "equip4 equip5 equip3");
     }
     .equip1{
         width: 50%;
@@ -38,32 +32,17 @@
         margin-top: 20px;
         height: 80%;
     }
-    .equiptext h4{
-        display: none;
-    }
     .equiptext{
         font-size: 1.3em;
+        h4{
+            display: none;
+        }
     }
     .audiomain{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr repeat(5,1fr);
-        grid-template-areas:
-        "nota1          nota1"
-        "audio1         audio2"
-        "formulario     nota2"
-        "formulario     icon4"
-        "formulario     nota4"
-        "formulario     icon5"
-        "formulario     nota5"
-        ;
-        justify-items: center;
-        align-items: center;
+        @include grid(1fr 1fr, 1fr 1fr repeat(5,1fr), center, center, "nota1 nota1" "audio1 audio2" "formulario nota2" "formulario icon4" "formulario nota4" "formulario icon5" "formulario nota5");
         padding-top: 10px;
     }
     .escucha3{
-        display: none;
-    }
-    .textaudio2{
         display: none;
     }
     .icon4{
@@ -80,6 +59,9 @@
     }
     .textaudio1{
         font-size: 2.4em;
+    }
+    .textaudio2{
+        display: none;
     }
     .textaudio3{
         font-size: 2em;
@@ -101,9 +83,8 @@
         align-self: flex-start;
     }
     .services{
-        display: flex;
+        @include flex(none, none, none, 140px);
         flex-wrap: wrap;
-        gap: 140px;
         padding-top: 60px;
     }
     .descript{
@@ -132,20 +113,20 @@
     }
     .textoheadresp{
         display: inline;
-        font-family: "League Gothic", sans-serif;
+        font-family: $fuente_1;
         font-size: 1.2em;
         font-weight: lighter;
         color: white;
         text-shadow: 2px 2px 2px black;
         text-align: center;
         opacity: .5;
-    }
-    .textoheadresp .h3b{
-        width: 60%;
-        font-size: 0.85em;
-        font-weight: lighter; 
-        padding-top: 20px; 
-        margin-left: 150px;   
+        .h3b{
+            width: 60%;
+            font-size: 0.85em;
+            font-weight: lighter; 
+            padding-top: 20px; 
+            margin-left: 150px; 
+        }
     }
     .titserv h2{
         margin-top: 25px;
@@ -166,18 +147,7 @@
         width: 55%;
     }
     .maincont{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4fr repeat(5,.5fr);
-        grid-template-areas: 
-        "form    form"
-        "icono   icono"            
-        "texto2  texto2"                
-        "icono2  icono2"
-        "texto3  texto3"                 
-        "titulo  titulo"
-        ;
-        justify-items: center;
-        align-items: center;
+        @include grid(1fr 1fr, 4fr repeat(5,.5fr), center, center, "form form" "icono icono" "texto2 texto2" "icono2 icono2" "texto3 texto3" "titulo titulo");
         padding: 0px 140px;
     }
     .formcontb{
@@ -192,6 +162,12 @@
     .textcont3{
         display: none;
     }
+    .textcont4{
+        align-self: baseline;
+    }
+    .textcont5{
+        align-self: baseline;
+    }
     .boton3{
         margin-left: 132px;
     }
@@ -205,12 +181,6 @@
     .icon2{
         width: 10%;
         justify-self: center;
-    }
-    .textcont4{
-        align-self: baseline;
-    }
-    .textcont5{
-        align-self: baseline;
     }
     .titcont{
         justify-self: center;

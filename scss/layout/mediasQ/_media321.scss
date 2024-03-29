@@ -14,30 +14,38 @@
     .iconcenter{
         padding: 0px 80px;
     }
-    .formcontb fieldset{
-        font-size: 1.2em;  
+    .formcontb{
+        fieldset{
+            font-size: 1.2em; 
+        }
+        label{
+            padding-left: 18px; 
+        }
+        input{
+            margin-left: 18px;
+        }
+        textarea{
+            margin-left: 18px;
+        }
     }
-    .formcontb fieldset label{
-        padding-left: 18px;
-    }
-    .formcontb fieldset input{
-        margin-left: 18px;
-    }
-    .formcontb fieldset textarea{
-        margin-left: 18px;
-    }
-    footer h5{
-        font-size: 1em;
-    }
-    header nav{ 
-        margin-left: 25px;
+    footer{
+        h5{
+            font-size: 1em; 
+        }
+    } 
+    header{
+        nav{ 
+            margin-left: 25px;
+        }
     }
     .leyenda{
         font-size: 0.9em;
     }
-    .services .textoheadresp{
-        font-size: 0.9em;
-    }
+    .services{
+        .textoheadresp{
+            font-size: 0.9em;
+        }
+    } 
     .grab{
         width: 55%;
     }

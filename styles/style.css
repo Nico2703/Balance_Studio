@@ -848,14 +848,17 @@ footer h5 {
 
 /* Media **/
 @media (max-width: 1450px) {
-  .audiomain {
-    padding-left: 40px;
-  }
   .maincont {
     padding: 0px 220px;
   }
+  .audiomain {
+    padding-left: 40px;
+  }
 }
 @media (max-width: 1350px) {
+  .maincont {
+    padding: 0px 120px;
+  }
   .audiomain {
     grid-template-columns: 400px 440px 40px 400px;
     padding-left: 0px;
@@ -874,9 +877,6 @@ footer h5 {
   }
   .boton2 {
     margin-left: 10px;
-  }
-  .maincont {
-    padding: 0px 120px;
   }
 }
 @media (max-width: 1250px) {
@@ -897,11 +897,11 @@ footer h5 {
   }
 }
 @media (max-width: 1150px) {
+  .maincont {
+    padding: 0px 60px;
+  }
   .contactonav {
     margin-left: 0px;
-  }
-  .textohead {
-    width: 50%;
   }
   .audiomain {
     grid-template-columns: 300px 450px 40px 300px;
@@ -915,28 +915,25 @@ footer h5 {
   .textaudio3 {
     font-size: 1.4em;
   }
-  header nav {
-    padding-left: 100px;
-  }
   .textohead {
     width: 90%;
   }
-  header a {
-    font-size: 1.4em;
+  header nav {
+    padding-left: 100px;
   }
-  .maincont {
-    padding: 0px 60px;
+  header nav ul li a {
+    font-size: 1.4em;
   }
 }
 @media (max-width: 1085px) {
+  .maincont {
+    padding: 0px 0px;
+  }
   .audiomain {
     grid-template-columns: 250px 400px 40px 250px;
   }
   .equip {
     grid-template-columns: 300px 350px 150px 150px;
-  }
-  .maincont {
-    padding: 0px 0px;
   }
   .audiomult {
     padding-left: 260px;
@@ -1024,11 +1021,12 @@ footer h5 {
     font-size: 1.1em;
   }
   .equip {
+    display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-rows: 1fr 3fr 3fr;
-    grid-template-areas: "  texto     texto    texto" "  equip1    equip1   equip2" "  equip4    equip5   equip3";
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: "texto texto texto" "equip1 equip1 equip2" "equip4 equip5 equip3";
   }
   .equip1 {
     width: 50%;
@@ -1045,24 +1043,22 @@ footer h5 {
     margin-top: 20px;
     height: 80%;
   }
-  .equiptext h4 {
-    display: none;
-  }
   .equiptext {
     font-size: 1.3em;
   }
+  .equiptext h4 {
+    display: none;
+  }
   .audiomain {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr repeat(5, 1fr);
-    grid-template-areas: "nota1          nota1" "audio1         audio2" "formulario     nota2" "formulario     icon4" "formulario     nota4" "formulario     icon5" "formulario     nota5";
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: "nota1 nota1" "audio1 audio2" "formulario nota2" "formulario icon4" "formulario nota4" "formulario icon5" "formulario nota5";
     padding-top: 10px;
   }
   .escucha3 {
-    display: none;
-  }
-  .textaudio2 {
     display: none;
   }
   .icon4 {
@@ -1079,6 +1075,9 @@ footer h5 {
   }
   .textaudio1 {
     font-size: 2.4em;
+  }
+  .textaudio2 {
+    display: none;
   }
   .textaudio3 {
     font-size: 2em;
@@ -1101,8 +1100,11 @@ footer h5 {
   }
   .services {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: none;
+    justify-content: none;
+    align-items: none;
     gap: 140px;
+    flex-wrap: wrap;
     padding-top: 60px;
   }
   .descript {
@@ -1165,11 +1167,12 @@ footer h5 {
     width: 55%;
   }
   .maincont {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 4fr repeat(5, 0.5fr);
-    grid-template-areas: "form    form" "icono   icono" "texto2  texto2" "icono2  icono2" "texto3  texto3" "titulo  titulo";
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: "form form" "icono icono" "texto2 texto2" "icono2 icono2" "texto3 texto3" "titulo titulo";
     padding: 0px 140px;
   }
   .formcontb {
@@ -1184,6 +1187,12 @@ footer h5 {
   .textcont3 {
     display: none;
   }
+  .textcont4 {
+    align-self: baseline;
+  }
+  .textcont5 {
+    align-self: baseline;
+  }
   .boton3 {
     margin-left: 132px;
   }
@@ -1197,12 +1206,6 @@ footer h5 {
   .icon2 {
     width: 10%;
     justify-self: center;
-  }
-  .textcont4 {
-    align-self: baseline;
-  }
-  .textcont5 {
-    align-self: baseline;
   }
   .titcont {
     justify-self: center;
@@ -1224,7 +1227,7 @@ footer h5 {
   header nav ul {
     gap: 10px;
   }
-  header a {
+  header nav ul li a {
     font-size: 0.8em;
   }
   .textohead {
@@ -1240,7 +1243,7 @@ footer h5 {
     font-size: 1.2em;
   }
   .formcont fieldset label {
-    font-size: 0.45em;
+    font-size: 0.85em;
     margin-left: 0px;
   }
   .formcont fieldset input {
@@ -1284,11 +1287,11 @@ footer h5 {
   }
 }
 @media (max-width: 600px) {
-  .audiomult {
-    padding-left: 20px;
-  }
   .maincont {
     padding: 0px 60px;
+  }
+  .audiomult {
+    padding-left: 20px;
   }
   .boton3 {
     margin-left: 125px;
@@ -1366,10 +1369,11 @@ footer h5 {
   header nav ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: none;
     align-items: center;
+    gap: 10px;
   }
-  header a {
+  header nav ul li a {
     font-size: 1.6em;
   }
   header nav label {
@@ -1381,9 +1385,12 @@ footer h5 {
     height: 100%;
   }
   .equip {
+    display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 1fr 3fr 3fr 3fr;
-    grid-template-areas: "  texto     texto  " "  equip1    equip2 " "  equip4    equip5 " "  equip3    equip3 ";
+    justify-content: none;
+    align-content: none;
+    grid-area: "texto texto" "equip1 equip2" "equip4 equip5" "equip3 equip3";
   }
   .equip1 {
     width: 90%;
@@ -1405,12 +1412,25 @@ footer h5 {
     margin: 0px;
   }
   .audiomain {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 0.5fr) 3fr repeat(4, 0.5fr);
-    grid-template-areas: "nota1       " "audio1      " "audio2      " "formulario  " "icon4       " "nota4       " "icon5       " "nota5       ";
+    justify-content: none;
+    align-content: none;
+    grid-area: "nota1" "audio1" "audio2" "formulario" "icon4" "nota4" "icon5" "nota5";
   }
   .textaudio3 {
     display: none;
+  }
+  .textaudio4 {
+    justify-self: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .textaudio5 {
+    justify-self: center;
+    padding: 0px;
+    margin: 0px;
   }
   .escucha1 {
     margin-bottom: 10px;
@@ -1424,18 +1444,26 @@ footer h5 {
     justify-self: center;
     margin: 0px;
   }
-  .textaudio4 {
-    justify-self: center;
-    padding: 0px;
-    margin: 0px;
-  }
-  .textaudio5 {
-    justify-self: center;
-    padding: 0px;
-    margin: 0px;
-  }
   .formcont {
     width: 80%;
+  }
+  .formcont fieldset {
+    font-size: 1.2em;
+  }
+  .formcont fieldset label {
+    font-size: 0.45em;
+    margin-left: 0px;
+  }
+  .formcont fieldset input {
+    width: 85%;
+    margin-left: 15px;
+  }
+  .formcont fieldset textarea {
+    width: 85%;
+    height: 100px;
+    margin-left: 15px;
+    outline: none;
+    resize: none;
   }
   .boton1 {
     margin-left: 115px;
@@ -1590,13 +1618,13 @@ footer h5 {
   .formcontb fieldset {
     font-size: 1.2em;
   }
-  .formcontb fieldset label {
+  .formcontb label {
     padding-left: 18px;
   }
-  .formcontb fieldset input {
+  .formcontb input {
     margin-left: 18px;
   }
-  .formcontb fieldset textarea {
+  .formcontb textarea {
     margin-left: 18px;
   }
   footer h5 {

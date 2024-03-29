@@ -1,4 +1,7 @@
 @media (max-width: 1350px){
+    .maincont{
+        padding: 0px 120px;
+    }
     .audiomain{
         grid-template-columns: 400px 440px 40px 400px;
         padding-left: 0px;
@@ -17,8 +20,5 @@
     }
     .boton2{
         margin-left: 10px;
-    }
-    .maincont{
-        padding: 0px 120px;
     }
 }
