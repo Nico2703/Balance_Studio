@@ -1,0 +1,167 @@
+.maincont{
+    background-color: $color_3;
+    @include grid(2fr 2fr 1fr 1fr 2fr, 2fr 1fr 1fr 0.5fr, center, center, "form form . . texto1" "form form . icono texto2" "form form . icono2 texto3" "boton3 boton4 titulo titulo .");
+    padding: 0px 260px;
+    h2{
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+    h3{
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+    h4{
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+    h5{
+        &::selection{
+            background-color: $color_2;
+        }
+    }
+}
+
+.titcont{
+    color: $color_5;
+    font-family: $fuente_1;
+    font-size: 2.8em;
+    font-weight: 400;
+    grid-area: titulo;
+    padding-right: 240px;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.formcontb{
+    width: 80%;
+    padding-bottom: 20px;
+    grid-area: form;
+    fieldset{
+        background-color: $color_5;
+        border-radius: 8%;
+        border-style: none;
+        padding-bottom: 20px;
+        font-family: $fuente_1;
+        font-weight: 400;
+        color: white;
+        font-size: 1.6em; 
+        legend{
+            padding-top: 40px;
+            text-align: center;
+        }
+        label{
+            font-size: 0.65em;
+            font-weight: 100;
+            text-align: left;
+            padding-left: 30px;
+            list-style-type: none;
+        }
+        input{
+            width: 85%;
+            margin-left: 30px;
+        }
+        textarea{
+            width: 85%;
+            margin-left: 30px;
+            outline: none;
+            resize: none;
+        }
+    }
+}
+
+.boton3{
+    text-align: center;
+    grid-area: boton3;
+    margin-top: 10px;
+    margin-left: 140px;
+    &:hover{
+        background-color: lightgreen;
+    }
+}
+
+.boton4{
+    text-align: center;
+    grid-area: boton4;
+    margin-left: 20px; 
+    &:hover{
+        background-color: lightcoral;
+    }
+}
+
+.textcont1{
+    font-family: $fuente_1;
+    font-size: 2.2em;
+    font-weight: 100;
+    color: white;
+    grid-area: texto1;
+    align-self: flex-start;
+    padding-top: 30px;
+}
+
+.textcont2{
+    font-family: $fuente_1;
+    font-size: 1.8em;
+    font-weight: 100;
+    color: white;
+    grid-area: texto1;
+    align-self: flex-end;
+    padding-bottom: 60px;
+}
+
+.textcont3{
+    font-family: $fuente_1;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: center;
+    grid-area: texto2;
+    padding-bottom: 20px;
+}
+
+.textcont4{
+    font-family: $fuente_1;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: flex-end;
+    grid-area: texto2;
+    padding-bottom: 10px;
+}
+
+.textcont5{
+    font-family: $fuente_1;
+    font-size: 1.6em;
+    font-weight: 100;
+    color: white;
+    align-self: start;
+    padding-top: 10px;
+    grid-area: texto3;
+}
+
+.icon{
+    width: 26%;
+    grid-area: icono;
+    justify-self: right;
+    align-self: flex-end;
+    padding-bottom: 10px;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+.icon2{
+    width: 25%;
+    grid-area: icono2;
+    justify-self: right;
+    align-self: baseline;
+    padding-top: 10px;
+    &::selection{
+        background-color: $color_2;
+    }
+}
+
+

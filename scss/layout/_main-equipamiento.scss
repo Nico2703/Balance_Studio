@@ -1,0 +1,86 @@
+.mainequip {
+    background-color: $color_3;
+    background-blend-mode: soft-light;
+    background-image: url("../assets/img/Equipamiento/Fondo_equip.png");
+    background-position: contain;
+    list-style:symbols();
+    list-style-position:inside;
+    font-family: $fuente_1;
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.553);
+    text-align: left;
+    @include flex(none, space-evenly, none, 10px 70px);
+    flex-wrap: wrap;
+    padding-top: 20px;
+    li{
+        display: list-item;
+        a{
+            text-decoration-line: none;
+            color: white; 
+        }
+    }
+    
+}
+
+.titequip h2{
+    color: $color_5;
+    text-align: center;
+    font-weight: 400;
+    &::selection{
+        background-color: $color_5;
+    }
+}
+
+.lista1{
+    width: 30%;
+    li{
+        &::selection{
+            background-color: $color_2;
+        }
+        a{
+            &:hover{
+                color: $color_5;
+                text-decoration: underline;
+            }
+            &::selection{
+                background-color: $color_2;
+            }
+        }
+    }
+}
+
+.lista2{
+    width: 25%;
+    li{
+        &::selection{
+            background-color: $color_2;
+        }
+        a{
+            &:hover{
+                color: $color_5;
+                text-decoration: underline;
+            }
+            &::selection{
+                background-color: $color_2;
+            }
+        }
+    }
+}
+
+.lista3{
+    width: 20%;
+    li{
+        &::selection{
+            background-color: $color_2;
+        }
+        a{
+            &:hover{
+                color: $color_5;
+                text-decoration: underline;
+            }
+            &::selection{
+                background-color: $color_2;
+            }
+        }
+    }
+}
