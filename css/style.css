@@ -921,7 +921,7 @@ footer {
       font-size: 0.85em;
       font-weight: lighter;
       padding-top: 20px;
-      margin-left: 150px; }
+      margin-left: 153px; }
   .titserv h2 {
     margin-top: 25px; }
   .mainequip {
@@ -929,7 +929,6 @@ footer {
   .leyenda {
     text-align: center;
     padding-bottom: 95px;
-    margin-left: 15px;
     grid-area: aux; }
   .audiomult {
     padding-left: 200px; }
@@ -978,10 +977,12 @@ footer {
     font-size: 3em; }
   .logohead h2 {
     font-size: 1em; }
-  header nav ul {
-    gap: 10px; }
-    header nav ul li a {
-      font-size: 0.8em; }
+  header nav {
+    margin-left: 0px; }
+    header nav ul {
+      gap: 20px; }
+      header nav ul li a {
+        font-size: 1.2em; }
   .textohead {
     font-size: 1em; }
     .textohead .h3b {
@@ -1022,7 +1023,9 @@ footer {
 @media (max-width: 630px) {
   .services {
     gap: 160px;
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  header nav ul {
+    gap: 10px; } }
 
 @media (max-width: 600px) {
   .maincont {
@@ -1050,7 +1053,11 @@ footer {
   .inst {
     width: 35%;
     padding-top: 160px;
-    margin-left: 100px; } }
+    margin-left: 100px; }
+  header nav ul {
+    gap: 5px; }
+    header nav ul li a {
+      font-size: 0.9em; } }
 
 @media (max-width: 500px) {
   .maincont {
