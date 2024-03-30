@@ -8,7 +8,7 @@
 @import "./utilities/mixin";
 
  /* Base **/
- @import "./base/reset";
+@import "./base/reset";
 
 /* Layout **/
 @import "./layout/header-home";
@@ -19,23 +19,23 @@
 @import "./layout/main-contacto";
 @import "./layout/footer";
 
- /* Media **/
- @import "./layout/mediasQ/media1450";
- @import "./layout/mediasQ/media1350";
- @import "./layout/mediasQ/media1250";
- @import "./layout/mediasQ/media1150";
- @import "./layout/mediasQ/media1085";
- @import "./layout/mediasQ/media950";
- @import "./layout/mediasQ/media850";
- @import "./layout/mediasQ/media769";
- @import "./layout/mediasQ/media700";
- @import "./layout/mediasQ/media630";
- @import "./layout/mediasQ/media600";
- @import "./layout/mediasQ/media500";
- @import "./layout/mediasQ/media480";
- @import "./layout/mediasQ/media426";
- @import "./layout/mediasQ/media376";
- @import "./layout/mediasQ/media321";
+ /* MediaQ **/
+@import "./layout/mediasQ/media1450";
+@import "./layout/mediasQ/media1350";
+@import "./layout/mediasQ/media1250";
+@import "./layout/mediasQ/media1150";
+@import "./layout/mediasQ/media1085";
+@import "./layout/mediasQ/media950";
+@import "./layout/mediasQ/media850";
+@import "./layout/mediasQ/media769";
+@import "./layout/mediasQ/media700";
+@import "./layout/mediasQ/media630";
+@import "./layout/mediasQ/media600";
+@import "./layout/mediasQ/media500";
+@import "./layout/mediasQ/media480";
+@import "./layout/mediasQ/media426";
+@import "./layout/mediasQ/media376";
+@import "./layout/mediasQ/media321";
 
 
 

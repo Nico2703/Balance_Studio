@@ -10,10 +10,25 @@
             width: 90%; 
         }
     } 
-    .boton3{
-        margin-left: 90px;
-    }
     .textoheadresp{
         font-size: 1em;
+    }
+    .formcontb{
+        width: 90%;
+        fieldset{
+            font-size: 1.4em; 
+            label{
+                padding-left: 25px;
+            }
+            input{
+                margin-left: 25px;
+            }
+            textarea{
+                margin-left: 25px;
+            }
+        }
+    }
+    .boton3{
+        margin-left: 105px;
     }
 }

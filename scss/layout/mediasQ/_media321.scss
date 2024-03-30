@@ -2,14 +2,24 @@
     .menu{
         font-size: 0.9em;
     }
+    .formcont{
+        fieldset{
+            label{
+                padding-left: 20px;
+            }
+            input{
+                margin-left: 20px;
+            }
+            textarea{
+                margin-left: 20px;
+            }
+        }
+    }
     .equip{
         grid-template-columns: 150px 150px;
     }
     .boton1{
         margin-left: 75px;
-    }
-    .boton3{
-        margin-left: 65px;
     }
     .iconcenter{
         padding: 0px 80px;
@@ -26,6 +36,12 @@
         }
         textarea{
             margin-left: 18px;
+        }
+        .boton3{
+            margin-left: 85px;
+        }
+        .boton4{
+            margin-left: 28px;
         }
     }
     footer{

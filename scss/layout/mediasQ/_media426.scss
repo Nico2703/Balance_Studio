@@ -84,21 +84,14 @@
     .formcont{
         width: 80%;
         fieldset{
-            font-size: 1.2em;
             label{
-                font-size: 0.45em;
-                margin-left: 0px;
+                font-size: 0.75em;
             }
             input{
-                width: 85%;
-                margin-left: 15px;
+                margin-left: 25px;
             }
             textarea{
-                width: 85%;
-                height: 100px;
-                margin-left: 15px;
-                outline: none;
-                resize: none;
+                margin-left: 25px;
             }
         }
     }
