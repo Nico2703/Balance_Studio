@@ -164,4 +164,34 @@
     }
 }
 
+.text-focus-in {
+	-webkit-animation: text-focus-in 6s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite reverse ;
+	        animation: text-focus-in 6s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite reverse ;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
 

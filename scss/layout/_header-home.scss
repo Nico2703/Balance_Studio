@@ -1,18 +1,16 @@
 header{ 
     width: 100%;
     height: 26rem; 
-    background-color: $color_1;
+    background-color: $color_6;
     background-blend-mode: soft-light;
     background-image: url("../assets/img/Header.jpg");
-    filter: grayscale(1);
+    //filter: grayscale(1);
+    filter: brightness(80%);
     background-size: cover;
     background-position: 0% 80%;
     @include grid(1fr 3fr, 1fr 2fr, center, center, "logo navg" "aux aux");
     &:hover{
         filter: none;
-    }
-    img::selection{
-        background-color:$color_2;
     }
     nav{
         font-family: $fuente_1;
@@ -29,9 +27,9 @@ header{
                 text-decoration-line: none;
                 border: 1.8px solid transparent;
                 &:hover{
-                    color: $color_3; 
+                    color: $color_5; 
                     font-weight: 500;
-                    border: 1.8px outset $color_3; 
+                    border: 1.8px outset white; 
                 }   
             }
         }
@@ -102,3 +100,39 @@ header nav #click, header nav label{
     }  
 }
 
+.scale-up-ver-bottom {
+	-webkit-animation: scale-up-ver-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+}
+
+@keyframes scale-up-ver-bottom {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 0% 100%;
+              transform-origin: 0% 100%;
+    }
+}
+  
+  

@@ -32,26 +32,38 @@ main{
     opacity: 0.5;
     &:hover{
         opacity: 1;
+        transform: scale(1.1);
+        transition: transform 0.5s;
     }
     h3{
         font-size: 2em;
         font-weight: 100;
         padding-left: 15px;
+        &::selection{
+            background-color: $color_2;
+        }
     }
     h4{
         font-size: 1.4em;
         font-weight: 100;
         padding: 15px 15px;
+        &::selection{
+            background-color: $color_2;
+        }
     }
     img{
         width: 40%; 
         padding-left: 10px;
+        &::selection{
+            background-color: $color_2;
+        }
     }
 }
 
 .equip{
     width: 100%;
-    background-color: $color_4;
+    background-image: linear-gradient(to top, $color_4, $color_3);
+    //background-color: $color_4;
     font-family: $fuente_1;
     font-size: 2em;
     color: white;
@@ -64,6 +76,9 @@ main{
     align-self: stretch;
     justify-self: right;
     padding: 20px 0px;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .equip2{
@@ -71,11 +86,17 @@ main{
     align-self: stretch;
     justify-self: center;
     padding: 20px 0px;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .equip3{
     grid-area: equip3;
     width: 70%;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .equip4{
@@ -83,6 +104,9 @@ main{
     align-self: stretch;
     justify-self: right;
     padding: 20px 20px;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .equip5{
@@ -90,6 +114,9 @@ main{
     align-self: stretch;
     justify-self: left;
     padding: 20px 20px;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .equiptext{
@@ -111,6 +138,7 @@ main{
 
 .audiomain{
     width: 100%;
+    background-image: linear-gradient(to top, $color_3, $color_4);
     @include grid(400px 480px 120px 400px, repeat(2,100px) repeat(2,50px) 350px, center, center, "audio1 . nota1 nota1" "audio2 . nota2 nota2" "audio3 formulario icon4 nota4" "audio3 formulario icon5 nota5" ". formulario  . .");
     padding-top: 30px;
     padding-left: 120px; 
@@ -120,18 +148,27 @@ main{
     width: 100%;
     grid-area: audio1;
     align-self: baseline;
+    &:hover{
+        filter: drop-shadow(0 0 20px $color_5);
+    }
 }
 
 .escucha2{
     width: 100%;
     grid-area: audio2;
     align-self: baseline;
+    &:hover{
+        filter: drop-shadow(0 0 20px $color_5);
+    }
 }
 
 .escucha3{
     width: 100%;
     grid-area: audio3; 
     align-self: baseline;
+    &:hover{
+        filter: drop-shadow(0 0 20px $color_5);
+    }
 }
 
 .textaudio1{

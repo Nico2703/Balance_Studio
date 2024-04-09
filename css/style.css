@@ -12,10 +12,10 @@
 header {
   width: 100%;
   height: 26rem;
-  background-color: rgba(93, 62, 125, 0.8);
+  background-color: rgba(13, 0, 28, 0.75);
   background-blend-mode: soft-light;
   background-image: url("../assets/img/Header.jpg");
-  filter: grayscale(1);
+  filter: brightness(80%);
   background-size: cover;
   background-position: 0% 80%;
   display: grid;
@@ -26,8 +26,6 @@ header {
   grid-template-areas: "logo navg" "aux aux"; }
   header:hover {
     filter: none; }
-  header img::selection {
-    background-color: #823B82; }
   header nav {
     font-family: "League Gothic", sans-serif;
     grid-area: navg;
@@ -47,9 +45,9 @@ header {
         text-decoration-line: none;
         border: 1.8px solid transparent; }
         header nav ul a:hover {
-          color: #0D001C;
+          color: #A3306B;
           font-weight: 500;
-          border: 1.8px outset #0D001C; }
+          border: 1.8px outset white; }
 
 .menu ul li a::selection {
   background-color: #823B82; }
@@ -101,6 +99,34 @@ header nav #click, header nav label {
   .textohead h3::selection {
     background-color: #823B82; }
 
+.scale-up-ver-bottom {
+  -webkit-animation: scale-up-ver-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-ver-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes scale-up-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%; } }
+
+@keyframes scale-up-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%; } }
+
 main {
   width: 100%;
   background-color: #0D001C; }
@@ -134,22 +160,30 @@ main {
   border-radius: 8%;
   opacity: 0.5; }
   .box:hover {
-    opacity: 1; }
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.5s; }
   .box h3 {
     font-size: 2em;
     font-weight: 100;
     padding-left: 15px; }
+    .box h3::selection {
+      background-color: #823B82; }
   .box h4 {
     font-size: 1.4em;
     font-weight: 100;
     padding: 15px 15px; }
+    .box h4::selection {
+      background-color: #823B82; }
   .box img {
     width: 40%;
     padding-left: 10px; }
+    .box img::selection {
+      background-color: #823B82; }
 
 .equip {
   width: 100%;
-  background-color: #1B003A;
+  background-image: linear-gradient(to top, #1B003A, #0D001C);
   font-family: "League Gothic", sans-serif;
   font-size: 2em;
   color: white;
@@ -166,28 +200,38 @@ main {
   align-self: stretch;
   justify-self: right;
   padding: 20px 0px; }
+  .equip1:hover {
+    transform: scale(1.05); }
 
 .equip2 {
   grid-area: equip2;
   align-self: stretch;
   justify-self: center;
   padding: 20px 0px; }
+  .equip2:hover {
+    transform: scale(1.05); }
 
 .equip3 {
   grid-area: equip3;
   width: 70%; }
+  .equip3:hover {
+    transform: scale(1.05); }
 
 .equip4 {
   grid-area: equip4;
   align-self: stretch;
   justify-self: right;
   padding: 20px 20px; }
+  .equip4:hover {
+    transform: scale(1.05); }
 
 .equip5 {
   grid-area: equip5;
   align-self: stretch;
   justify-self: left;
   padding: 20px 20px; }
+  .equip5:hover {
+    transform: scale(1.05); }
 
 .equiptext {
   grid-area: texto;
@@ -203,6 +247,7 @@ main {
 
 .audiomain {
   width: 100%;
+  background-image: linear-gradient(to top, #0D001C, #1B003A);
   display: grid;
   grid-template-columns: 400px 480px 120px 400px;
   grid-template-rows: repeat(2, 100px) repeat(2, 50px) 350px;
@@ -216,16 +261,22 @@ main {
   width: 100%;
   grid-area: audio1;
   align-self: baseline; }
+  .escucha1:hover {
+    filter: drop-shadow(0 0 20px #A3306B); }
 
 .escucha2 {
   width: 100%;
   grid-area: audio2;
   align-self: baseline; }
+  .escucha2:hover {
+    filter: drop-shadow(0 0 20px #A3306B); }
 
 .escucha3 {
   width: 100%;
   grid-area: audio3;
   align-self: baseline; }
+  .escucha3:hover {
+    filter: drop-shadow(0 0 20px #A3306B); }
 
 .textaudio1 {
   font-family: "League Gothic", sans-serif;
@@ -416,6 +467,46 @@ main {
 .textoheadresp {
   display: none; }
 
+.slide-in-blurred-top {
+  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both; }
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
 .mainequip {
   background-color: #0D001C;
   background-blend-mode: soft-light;
@@ -487,6 +578,8 @@ main {
   .audiomult audio {
     width: 60%;
     margin-top: 10px; }
+    .audiomult audio:hover {
+      filter: drop-shadow(0 0 20px #A3306B); }
 
 .titmult h2 {
   padding-top: 18em;
@@ -682,9 +775,33 @@ main {
   .icon2::selection {
     background-color: #823B82; }
 
+.text-focus-in {
+  -webkit-animation: text-focus-in 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite reverse;
+  animation: text-focus-in 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite reverse; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
 footer {
   width: 100%;
-  background-color: #823B82;
+  background-image: linear-gradient(to top, #823B82, #0D001C);
   padding-top: 40px;
   text-align: center; }
   footer h5 {

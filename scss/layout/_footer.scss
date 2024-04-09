@@ -1,6 +1,7 @@
 footer{
     width: 100%;
-    background-color: $color_2;
+    //background-color: $color_2;
+    background-image: linear-gradient(to top, $color_2, $color_3);
     padding-top: 40px;
     text-align: center;
     h5{
