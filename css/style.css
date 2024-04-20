@@ -83,10 +83,11 @@ header nav #click, header nav label {
   font-family: "League Gothic", sans-serif;
   font-size: 1.6em;
   font-weight: lighter;
+  letter-spacing: 0.015em;
   color: white;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 1px 1px 1px black;
   text-align: center;
-  opacity: .5;
+  opacity: 0.75;
   grid-area: aux;
   justify-self: center; }
   .textohead .h3b {
@@ -380,19 +381,33 @@ main {
       resize: none; }
 
 .boton1 {
+  padding: 3px 2px;
+  border-radius: 5px;
+  border: none;
+  background-color: #A3306B;
   text-align: center;
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: larger;
   grid-area: formulario;
   margin-top: 10px;
   margin-left: 140px; }
   .boton1:hover {
-    background-color: lightgreen; }
+    background-color: green; }
 
 .boton2 {
+  padding: 3px 2px;
+  border-radius: 5px;
+  border: none;
+  background-color: #A3306B;
   text-align: center;
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: larger;
   grid-area: formulario;
   margin-left: 20px; }
   .boton2:hover {
-    background-color: lightcoral; }
+    background-color: red; }
 
 .mainservices {
   background-color: #0D001C; }
@@ -509,7 +524,7 @@ main {
 
 .mainequip {
   background-color: #0D001C;
-  background-blend-mode: soft-light;
+  background-blend-mode: lighten;
   background-image: url("../assets/img/Equipamiento/Fondo_equip.png");
   background-position: contain;
   list-style: symbols();
@@ -698,19 +713,33 @@ main {
       resize: none; }
 
 .boton3 {
+  padding: 3px 2px;
+  border-radius: 5px;
+  border: none;
+  background-color: #A3306B;
   text-align: center;
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: larger;
   grid-area: boton3;
   margin-top: 10px;
   margin-left: 140px; }
   .boton3:hover {
-    background-color: lightgreen; }
+    background-color: green; }
 
 .boton4 {
+  padding: 3px 2px;
+  border-radius: 5px;
+  border: none;
+  background-color: #A3306B;
   text-align: center;
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: larger;
   grid-area: boton4;
   margin-left: 20px; }
   .boton4:hover {
-    background-color: lightcoral; }
+    background-color: red; }
 
 .textcont1 {
   font-family: "League Gothic", sans-serif;
@@ -1029,10 +1058,11 @@ footer {
     font-family: "League Gothic", sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
+    letter-spacing: 0.015em;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
-    opacity: .5; }
+    opacity: .75; }
     .textoheadresp .h3b {
       width: 60%;
       font-size: 0.85em;

@@ -74,21 +74,35 @@
 }
 
 .boton3{
+    padding: 3px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: $color_5;
     text-align: center;
+    color: white;
+    font-family: $fuente_1;
+    font-size: larger;
     grid-area: boton3;
     margin-top: 10px;
     margin-left: 140px;
     &:hover{
-        background-color: lightgreen;
+        background-color: green;
     }
 }
 
 .boton4{
+    padding: 3px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: $color_5;
     text-align: center;
+    color: white;
+    font-family: $fuente_1;
+    font-size: larger;
     grid-area: boton4;
     margin-left: 20px; 
     &:hover{
-        background-color: lightcoral;
+        background-color: red;
     }
 }
 

@@ -78,10 +78,11 @@ header nav #click, header nav label{
     font-family: $fuente_1;
     font-size: 1.6em;
     font-weight: lighter;
+    letter-spacing: 0.015em;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px black;
     text-align: center;
-    opacity: .5; 
+    opacity: 0.75; 
     grid-area: aux;
     justify-self: center;
     .h3b{
